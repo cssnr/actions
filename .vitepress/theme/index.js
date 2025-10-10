@@ -5,6 +5,7 @@ import './custom.css'
 import Layout from './Layout.vue'
 
 import Badges from './components/Badges.vue'
+import ActionsNavigation from './components/ActionsNavigation.vue'
 import DarkLightImage from './components/DarkLightImage.vue'
 import GitHubTable from './components/GitHubTable.vue'
 import RollingTags from './components/RollingTags.vue'
@@ -22,6 +23,7 @@ export default {
     app.component('Badge', VPBadge)
 
     app.component('Badges', Badges)
+    app.component('ActionsNavigation', ActionsNavigation)
     app.component('DarkLightImage', DarkLightImage)
     app.component('GitHubTable', GitHubTable)
     app.component('RollingTags', RollingTags)

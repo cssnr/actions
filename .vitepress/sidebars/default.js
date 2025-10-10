@@ -1,10 +1,9 @@
+import actions from '../theme/configs/actions.js'
+
 export const directory = {
   text: 'Actions',
   collapsed: true,
-  items: [
-    { text: 'VirusTotal', link: '/virustotal' },
-    //
-  ],
+  items: actions,
 }
 
 export default [

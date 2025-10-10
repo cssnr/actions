@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
 
+import actions from './theme/configs/actions.js'
 import sidebars from './sidebars'
 
 const settings = {
@@ -73,19 +74,23 @@ export default defineConfig({
     siteTitle: settings.title,
     logo: settings.image32,
     nav: [
-      { text: 'Home', link: '/' },
       {
-        text: 'Actions',
-        items: [
-          { text: 'Action Directory', link: '/actions' },
-          {
-            items: [
-              { text: 'VirusTotal Action', link: '/virustotal' },
-              //
-            ],
-          },
-        ],
+        component: 'ActionsNavigation',
+        props: {
+          actions,
+        },
       },
+      // { text: 'Home', link: '/' },
+      // {
+      //   text: 'Actions',
+      //   items: [
+      //     { text: 'Action Directory', link: '/actions' },
+      //     {
+      //       items: [{ text: 'VirusTotal Action', link: '/virustotal' }],
+      //     },
+      //   ],
+      // },
+      { text: 'Directory', link: '/actions' },
       { text: 'Support', link: '/support' },
     ],
 
@@ -139,7 +144,7 @@ export default defineConfig({
         },
         sidebars.directory,
       ],
-      '/virustotal/': sidebars.virustotal,
+      ...sidebars.actions,
     },
 
     editLink: {

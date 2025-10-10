@@ -1,4 +1,4 @@
-import sidebar from './default.js'
+import sidebar from '../default.js'
 
 const base = '/virustotal'
 
