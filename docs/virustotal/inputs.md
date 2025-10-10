@@ -1,6 +1,6 @@
 ---
-title: Inputs Documentation
 pageClass: inputs-page
+title: Inputs Documentation
 ---
 
 # Inputs

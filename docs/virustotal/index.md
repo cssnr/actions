@@ -1,8 +1,8 @@
 ---
+pageClass: index-page
 prev:
   text: Actions
   link: /actions
-pageClass: index-page
 ---
 
 # VirusTotal Action
@@ -30,6 +30,12 @@ _If creating a [new workflow](https://docs.github.com/en/actions/concepts/workfl
 
 Check out the [Rolling Tags](features.md#rolling-tags) for more tag options.
 
+<div class="tip custom-block" style="padding-top: 8px;">
+
+See the [Inputs Documentation](inputs.md) for additional options and **default values**.
+
+</div>
+
 ## Permissions
 
 This action requires the following permissions to edit releases notes:
@@ -40,9 +46,3 @@ permissions:
 ```
 
 Permissions documentation for [Workflows](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/controlling-permissions-for-github_token) and [Actions](https://docs.github.com/en/actions/security-for-github-actions/security-guides/automatic-token-authentication).
-
-<div class="tip custom-block" style="padding-top: 8px; margin-top: 60px;">
-
-See the [Inputs Documentation](inputs.md) for additional options and **default values**.
-
-</div>

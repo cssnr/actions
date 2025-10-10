@@ -1,8 +1,8 @@
 ---
+title: Actions
 prev:
   text: Get Help
   link: /support
-title: Actions
 ---
 
 # Actions
@@ -16,7 +16,7 @@ These actions are currently hosted off-site.
 - [Stack Deploy Action](https://docker-deploy.cssnr.com/)
 - [Portainer Stack Deploy Action](https://portainer-deploy.cssnr.com/)
 
-::: info
+::: warning Work in Progress
 This site is a Work in Progress.
 Currently, the only documented action is [VirusTotal Action](./virustotal/index.md).
 

@@ -1,6 +1,6 @@
 ---
-title: Outputs Documentation
 pageClass: outputs-page
+title: Outputs Documentation
 ---
 
 # Outputs

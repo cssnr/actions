@@ -9,7 +9,6 @@ export default [
     items: [
       { text: 'Get Started', link: '/' },
       { text: 'Features', link: '/features' },
-      { text: 'Examples', link: '/examples' },
       //
     ],
   },
@@ -19,6 +18,7 @@ export default [
     items: [
       { text: 'Inputs', link: '/inputs' },
       { text: 'Outputs', link: '/outputs' },
+      { text: 'Examples', link: '/examples' },
     ],
   },
   // {

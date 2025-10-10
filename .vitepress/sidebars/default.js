@@ -13,8 +13,8 @@ export default [
     collapsed: true,
     items: [
       { text: 'Actions', link: '/actions' },
-      // { text: 'Development', link: '/development' },
-      { text: 'Get Help', link: '/support' },
+      { text: 'Development', link: '/development' },
+      { text: 'Support', link: '/support' },
     ],
   },
   directory,
