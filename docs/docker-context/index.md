@@ -17,20 +17,20 @@ This allows all subsequent `docker` commands to run on the remote [host/context]
 _To easily deploy a swarm or compose stack use: [cssnr/stack-deploy-action](https://github.com/cssnr/stack-deploy-action)_  
 _To deploy directly to Portainer use: [cssnr/portainer-stack-deploy-action](https://github.com/cssnr/portainer-stack-deploy-action)_
 
-Check out this simple example to see how this works.
+To get started, create or update your [workflow file](#workflow).
 
-```yaml
-steps:
-  - name: 'Docker Context'
-    uses: cssnr/docker-context-action@v1
-    with:
-      host: ${{ secrets.DOCKER_HOST }}
-      user: ${{ secrets.DOCKER_USER }}
-      pass: ${{ secrets.DOCKER_PASS }}
+## Workflow
 
-  - name: 'Stack Deploy'
-    runs: docker stack deploy -c docker-compose.yaml --detach=false stack-name
-```
+Add the step to an existing workflow or create a new one.
+
+::: code-group
+<<< snippets/step.yaml {1 yaml} [Existing Workflow ~vscode-icons:folder-type-github~]
+<<< snippets/workflow.yaml {13 yaml} [New Workflow ~vscode-icons:folder-type-github~]
+:::
+
+<LatestVersionBadge repo="cssnr/update-version-tags-action" />
+
+Check out the [Rolling Tags](#rolling-tags) for more tag options.
 
 <div class="tip custom-block" style="padding-top: 8px;">
 

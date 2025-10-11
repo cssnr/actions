@@ -1,0 +1,21 @@
+name: "Deploy"
+on:
+  workflow_dispatch:
+jobs:
+  deploy:
+    name: "Deploy"
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v5
+
+      - name: "Docker Context"
+        uses: cssnr/docker-context-action@v1
+        with:
+          host: ${{ secrets.DOCKER_HOST }}
+          user: ${{ secrets.DOCKER_USER }}
+          pass: ${{ secrets.DOCKER_PASS }}
+
+      - name: "Stack Deploy"
+        runs: docker stack deploy -c docker-compose.yaml --detach=false stack-name

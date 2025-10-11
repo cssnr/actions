@@ -1,0 +1,2 @@
+- name: "Update Tags"
+  uses: cssnr/update-version-tags-action@v1

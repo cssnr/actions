@@ -76,7 +76,7 @@ Will add result details to the job summary in the workflow.
 
 ---
 
-<!--@include: ./include/summary.md-->
+<!--@include: include/summary.md-->
 
 ---
 
@@ -91,7 +91,7 @@ You can customize the heading or remove it by specifying an empty string.
 
 Example Release Notes.
 
-<!--@include: ./include/notes.md-->
+<!--@include: include/notes.md-->
 
 #### update_release {#update_release}
 

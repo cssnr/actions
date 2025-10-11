@@ -9,7 +9,12 @@ prev:
 
 <Badges owner="cssnr" repo="virustotal-action" />
 
-<span class="search-keywords">Install and Setup Guide to Begin.</span>
+Submit file globs or release assets to the VirusTotal API for scanning.
+
+On release events the Release Notes will optionally be updated with links to the scan results.
+You can now customize the links display and release notes heading. See the [Features](features.md) for more details.
+
+Supports files up to 650MB and includes rate limiting for free accounts.
 
 To get started, create or update your [workflow file](#workflow) and review the [permissions](#permissions).
 
@@ -17,16 +22,14 @@ To get started, create or update your [workflow file](#workflow) and review the 
 
 Add the step to an existing workflow or create a new one.
 
-_If creating a [new workflow](https://docs.github.com/en/actions/concepts/workflows-and-actions/workflows#about-workflows), place it in the `.github/workflows` directory._
-
 ::: code-group
-<<< snippets/basic/step.yaml {1 yaml} [Existing Workflow ~vscode-icons:folder-type-github~]
-<<< snippets/basic/workflow.yaml {13,17 yaml} [New Workflow ~vscode-icons:folder-type-github~]
+<<< snippets/step.yaml {1 yaml} [Existing Workflow ~vscode-icons:folder-type-github~]
+<<< snippets/workflow.yaml {13,18 yaml} [New Workflow ~vscode-icons:folder-type-github~]
 :::
 
-**Make sure to add the required [Permissions](#permissions).**
+<LatestVersionBadge repo="cssnr/virustotal-action" />
 
-[![Latest Version](https://img.shields.io/github/v/release/cssnr/virustotal-action?style=for-the-badge&logo=github&label=Latest%20Release)](https://github.com/cssnr/virustotal-action/releases)
+**Make sure to add the required [Permissions](#permissions).**
 
 Check out the [Rolling Tags](features.md#rolling-tags) for more tag options.
 

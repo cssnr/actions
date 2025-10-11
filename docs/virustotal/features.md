@@ -28,7 +28,7 @@ You can customize the heading or remove it by specifying an empty string.
 
 Example Release Notes.
 
-<!--@include: ./include/notes.md-->
+<!--@include: include/notes.md-->
 
 ## Job Summary
 
@@ -36,7 +36,7 @@ Unless disabled, a Job Summary is generated to capture the command, output and e
 
 ::: details View Job Summary
 
-<!--@include: ./include/summary.md-->
+<!--@include: include/summary.md-->
 
 :::
 

@@ -1,10 +1,10 @@
 import sidebar from '../default.js'
 
-const base = '/docker-context'
+const base = '/update-version-tags'
 
 export default [
   {
-    text: 'Docker Context Action',
+    text: 'Update Version Tags',
     base,
     items: [
       { text: 'Get Started', link: '/' },
@@ -20,13 +20,5 @@ export default [
       // { text: 'Examples', link: '/examples' },
     ],
   },
-  // {
-  //   text: 'Links',
-  //   base,
-  //   items: [
-  //     { text: 'GitHub', link: 'https://github.com/cssnr/virustotal-action', target: '_blank' },
-  //     { text: 'Marketplace', link: 'https://github.com/cssnr/virustotal-action' },
-  //   ],
-  // },
   ...sidebar,
 ]
