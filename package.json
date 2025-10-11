@@ -13,7 +13,7 @@
   "dependencies": {
     "@cssnr/vitepress-plugin-copybutton": "^0.0.2",
     "lucide-vue-next": "^0.545.0",
-    "vitepress": "^2.0.0-alpha.12",
+    "vitepress": "^1.6.4",
     "vitepress-plugin-group-icons": "^1.6.3"
   },
   "devDependencies": {

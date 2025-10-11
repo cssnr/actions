@@ -13,6 +13,7 @@ title: Inputs Documentation
 | [file_globs](#file_globs) <CB />           | -                             | File Globs to Process                              |
 | [rate_limit](#rate_limit) <CB />           | `4`                           | API Calls Per Minute                               |
 | [release_id](#release_id) <CB />           | -                             | Release ID to Process                              |
+| [sha256](#sha256) <CB />                   | `false`                       | Calculate File SHA256                              |
 | [update_release](#update_release) <CB />   | `true`                        | Update the                                         |
 | [release_heading](#release_heading) <CB /> | _[see below](#release-notes)_ | Release Notes Heading                              |
 | [collapsed](#collapsed) <CB />             | `false`                       | Show Links Collapsed.                              |
@@ -44,7 +45,7 @@ See the [Examples](examples.md) section for more options.
 
 ## Details
 
-#### vt_api_key {#vt_api_key}
+#### vt_api_key <Badge type="warning" text="Required" /> {#vt_api_key}
 
 Get your API key from: https://www.virustotal.com/gui/my-apikey
 
@@ -62,6 +63,10 @@ Rate limit for file uploads. Set to `0` to disable if you know what you are doin
 If provided, will process the corresponding release.
 The release ID can be generated from a previous step.
 By providing a release ID, this action does not need to run on a release event to process a release.
+
+#### sha256 {#sha256}
+
+If enabled this will calculate the file's SHA256 hash, and include it in the output.
 
 #### summary {#summary}
 

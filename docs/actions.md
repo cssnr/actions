@@ -18,8 +18,8 @@ These actions are currently hosted off-site.
 
 ::: warning Work in Progress
 This site is a Work in Progress.
-Currently, the only documented action is [VirusTotal Action](./virustotal/index.md).
 
+This will eventually host the documentation for all actions.
 Once templating is complete, I will document more actions and merge both
 [Stack Deploy](https://docker-deploy.cssnr.com/) and the [Portainer Deploy](https://portainer-deploy.cssnr.com/)
 docs into this site.

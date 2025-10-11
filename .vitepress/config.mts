@@ -141,7 +141,11 @@ export default defineConfig({
           text: 'Support',
           items: [{ text: 'Get Help', link: '/support' }],
         },
-        sidebars.directory,
+        {
+          text: 'Actions',
+          collapsed: false,
+          items: sidebars.items,
+        },
       ],
       ...sidebars.actions,
     },
