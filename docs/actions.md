@@ -9,7 +9,7 @@ prev:
 
 The following actions are documented on this site.
 
-- [VirusTotal Action](./virustotal/index.md)
+<ActionList />
 
 These actions are currently hosted off-site.
 
