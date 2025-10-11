@@ -7,7 +7,7 @@ prev:
 
 # VirusTotal Action
 
-<Badges owner="cssnr" repo="virustotal-action" />
+<Badges owner="cssnr" repo="virustotal-action" name="virustotal-action" />
 
 Submit file globs or release assets to the VirusTotal API for scanning.
 

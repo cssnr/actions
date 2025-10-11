@@ -7,7 +7,7 @@ prev:
 
 # Update Version Tags
 
-<Badges owner="cssnr" repo="update-version-tags-action" />
+<Badges owner="cssnr" repo="update-version-tags-action" name="update-version-tags-action" />
 
 Update Version Tags on Push or Release for Semantic Versions or Custom Tags.
 
@@ -39,7 +39,7 @@ See the [Inputs Documentation](inputs.md) for additional options and **default v
 
 </div>
 
-### Permissions
+## Permissions
 
 This action requires the following permissions:
 
@@ -52,9 +52,9 @@ Permissions documentation for
 [Workflows](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/controlling-permissions-for-github_token)
 and [Actions](https://docs.github.com/en/actions/security-for-github-actions/security-guides/automatic-token-authentication).
 
-### Rolling Back
+## Rolling Back
 
-To roll back or manually update tags, copy this workflow: [tags.yaml](.github/workflows/tags.yaml)
+To roll back or manually update tags, copy this workflow: [tags.yaml](https://github.com/cssnr/update-version-tags-action/blob/master/.github/workflows/tags.yaml)
 
 To rollback tags you must use a PAT with the `repo` and `workflow` permissions.
 The target `sha` will be parsed from the target `tag` provided in the UI.

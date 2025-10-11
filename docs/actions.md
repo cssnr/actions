@@ -11,18 +11,15 @@ The following actions are documented on this site.
 
 <ActionList />
 
-These actions are currently hosted off-site.
+These actions are currently documented off-site.
 
 - [Stack Deploy Action](https://docker-deploy.cssnr.com/)
 - [Portainer Stack Deploy Action](https://portainer-deploy.cssnr.com/)
 
-::: warning Work in Progress
-This site is a Work in Progress.
+&nbsp;
 
-This will eventually host the documentation for all actions.
-Once templating is complete, I will document more actions and merge both
-[Stack Deploy](https://docker-deploy.cssnr.com/) and the [Portainer Deploy](https://portainer-deploy.cssnr.com/)
-docs into this site.
+::: warning Work in Progress
+This site is a Work in Progress and will eventually host the documentation for all actions.
 :::
 
 ## Published Actions

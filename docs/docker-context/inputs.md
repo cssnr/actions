@@ -18,26 +18,7 @@ title: Inputs Documentation
 | [registry_user](#registry_user) <CB /> | -                  | Registry Authentication Username |
 | [registry_pass](#registry_pass) <CB /> | -                  | Registry Authentication Password |
 
-## Example
-
-```yaml
-steps:
-  - name: 'Docker Context'
-    uses: cssnr/docker-context-action@v1
-    with:
-      host: ${{ secrets.DOCKER_HOST }}
-      user: ${{ secrets.DOCKER_USER }}
-      port: 22 # 22 is the default value - optional
-      pass: ${{ secrets.DOCKER_PASS }} # or ssh_key - optional
-      ssh_key: ${{ secrets.DOCKER_SSH_KEY }} # or pass - optional
-
-  - name: 'Inspect Docker'
-    runs: |
-      docker context ls
-      docker context inspect
-      docker info
-      docker ps
-```
+See the [Examples](#examples) section for more options.
 
 ## Details
 
@@ -131,6 +112,27 @@ Required to run [docker login](https://docs.docker.com/reference/cli/docker/logi
 ### registry_user <CB /> {#registry_user}
 
 Required to run [docker login](https://docs.docker.com/reference/cli/docker/login/) before stack deploy.
+
+## Examples
+
+```yaml
+steps:
+  - name: 'Docker Context'
+    uses: cssnr/docker-context-action@v1
+    with:
+      host: ${{ secrets.DOCKER_HOST }}
+      user: ${{ secrets.DOCKER_USER }}
+      port: 22 # 22 is the default value - optional
+      pass: ${{ secrets.DOCKER_PASS }} # or ssh_key - optional
+      ssh_key: ${{ secrets.DOCKER_SSH_KEY }} # or pass - optional
+
+  - name: 'Inspect Docker'
+    runs: |
+      docker context ls
+      docker context inspect
+      docker info
+      docker ps
+```
 
 &nbsp;
 

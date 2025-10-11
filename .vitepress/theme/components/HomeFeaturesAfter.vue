@@ -1,7 +1,7 @@
 <script setup>
 const badges = [
   {
-    src: 'https://img.shields.io/github/last-commit/cssnr/actions?logo=vitepress&logoColor=white&label=docs&style=for-the-badge',
+    src: 'https://img.shields.io/github/last-commit/cssnr/actions?logo=vitepress&logoColor=white&label=docs&style=for-the-badge&color=blue',
     href: 'https://github.com/cssnr/actions',
   },
   {

@@ -7,7 +7,7 @@ prev:
 
 # Docker Context Action
 
-<Badges owner="cssnr" repo="docker-context-action" />
+<Badges owner="cssnr" repo="docker-context-action" name="docker-context" />
 
 Set up a Remote Docker Context over SSH using Password or Keyfile Authentication.
 This allows all subsequent `docker` commands to run on the remote [host/context](https://docs.docker.com/engine/manage-resources/contexts/).

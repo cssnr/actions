@@ -7,41 +7,19 @@ title: Inputs Documentation
 
 💡 Click on the **Input Name** for more [Details](#details).
 
-| Input                | Default&nbsp;Value | Description&nbsp;of&nbsp;Input   |
-| :------------------- | :----------------- | :------------------------------- |
-| [prefix](#prefix)    | `v`                | Tag Prefix for Semantic Versions |
-| [major](#majorminor) | `true`             | Update Major Tag                 |
-| [minor](#majorminor) | `true`             | Update Minor Tag                 |
-| [tags](#tags)        | -                  | Additional Tags to Update        |
-| [tag](#tag)          | `github.ref_name`  | Manually Set Target Tag          |
-| [create](#create)    | `false`            | Create Target Tag                |
-| [summary](#summary)  | `true`             | Add Summary to Job               |
-| [dry_run](#dry_run)  | `false`            | Do not Create Tags, Outout Only  |
-| [token](#token)      | `github.token`     | For use with a PAT to Rollback   |
+| Input                        | Default&nbsp;Value | Description&nbsp;of&nbsp;Input   |
+| :--------------------------- | :----------------- | :------------------------------- |
+| [prefix](#prefix) <CB />     | `v`                | Tag Prefix for Semantic Versions |
+| [major](#major-minor) <CB /> | `true`             | Update Major Tag                 |
+| [minor](#major-minor) <CB /> | `true`             | Update Minor Tag                 |
+| [tags](#tags) <CB />         | -                  | Additional Tags to Update        |
+| [tag](#tag) <CB />           | `github.ref_name`  | Manually Set Target Tag          |
+| [create](#create) <CB />     | `false`            | Create Target Tag                |
+| [summary](#summary) <CB />   | `true`             | Add Summary to Job               |
+| [dry_run](#dry_run) <CB />   | `false`            | Do not Create Tags, Outout Only  |
+| [token](#token) <CB />       | `github.token`     | For use with a PAT to Rollback   |
 
-## Examples
-
-Manually set tags.
-
-```yaml
-- name: 'Update Tags'
-  uses: cssnr/update-version-tags-action@v1
-  with:
-    major: false
-    minor: false
-    tags: |
-      v1
-      v1.0
-```
-
-Specify the target tag.
-
-```yaml
-- name: 'Update Tags'
-  uses: cssnr/update-version-tags-action@v1
-  with:
-    tag: v1.0.1
-```
+See the [Examples](#examples) section for more options.
 
 ## Details
 
@@ -49,27 +27,41 @@ Specify the target tag.
 
 To disable the prefix, set it to an empty string `prefix: ''`
 
+Default: `v`
+
 #### major/minor
 
 Both major and minor versions are parsed from the release tag using `semver`. If you release
 version `1.0.0` this will update or create a reference for `v1` and `v1.0`. If you are not using semantic versions, set
 both to `false` and provide your own `tags`.
 
+Default: `true`
+
 #### tags
 
 The `prefix` is not applied to specified tags. These can be a string list `"v1,v1.0"` or newline
-delimited `|`. If you only want to update the specified `tags` make sure to set both `major` and `minor` to `false`.
+delimited `|`.
+
+To only update the specified `tags` set both `major` and `minor` to `false`. <Badge type="warning" text="Important" />
 
 #### tag
 
 This is the target tag to parse the `sha` from. Defaults to the `sha` that triggered the workflow.
 To override this behavior you can specify a target tag here from which the target `sha` will be parsed.
 This is the `sha` that all parsed or provided `tags` are updated too. Rolling back requires a PAT.
-See [Rolling Back](index.md#rolling-tags) for more details and a manual workflow example.
+See [Rolling Back](index.md#rolling-back) for more details and a manual workflow example.
+
+<span v-pre>
+
+Default: `${{ github.ref_name }}`
+
+</span>
 
 #### create
 
 If `true` this will create the `tag` at the current `sha` of the workflow run.
+
+Default: `false`
 
 #### summary
 
@@ -113,15 +105,49 @@ dry_run: false
 
 </details>
 
-#### dry_run #{dry_run}
+Default: `true`
+
+#### dry_run {#dry_run}
 
 If this is `true` no tags will be created/updated and will only output the results.
+
+Default: `false`
 
 #### token
 
 GitHub workflow tokens do not allow for rolling back or deleting tags.
 To do this you must create a PAT with the `repo` and `workflow` permissions, add it to secrets, and use it.
-See [Rolling Back](index.md#rolling-tags) for more information and an example.
+See [Rolling Back](index.md#rolling-back) for more information and an example.
+
+<span v-pre>
+
+Default: `${{ github.token }}`
+
+</span>
+
+## Examples
+
+Manually set tags.
+
+```yaml
+- name: 'Update Tags'
+  uses: cssnr/update-version-tags-action@v1
+  with:
+    major: false
+    minor: false
+    tags: |
+      v1
+      v1.0
+```
+
+Specify the target tag.
+
+```yaml
+- name: 'Update Tags'
+  uses: cssnr/update-version-tags-action@v1
+  with:
+    tag: v1.0.1
+```
 
 &nbsp;
 

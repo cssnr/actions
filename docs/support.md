@@ -26,6 +26,16 @@ You can submit general feedback via the [web form](https://cssnr.github.io/feedb
 
 [https://cssnr.github.io/feedback/](https://cssnr.github.io/feedback/)
 
+## Links
+
+- [CSSNR Discord](https://discord.gg/wXy6m2X8wY)
+- [GitHub Organization](https://github.com/cssnr)
+- [GitHub Profile](https://github.com/smashedr)
+- [NPM Profile](https://www.npmjs.com/~smashed)
+- [PyPI Profile](https://pypi.org/user/smashed/)
+- [Mozilla Profile](https://addons.mozilla.org/en-US/firefox/user/18021912/)
+- [Google Play Profile](https://play.google.com/store/apps/dev?id=8933468453824534870)
+
 &nbsp;
 
 <a href="https://ko-fi.com/cssnr" target="_blank" rel="noopener" style="display:inline-block;">
