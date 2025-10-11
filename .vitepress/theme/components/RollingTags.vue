@@ -1,7 +1,7 @@
 <script setup>
 // Props
 const props = defineProps({
-  repo: { type: String, default: 'cssnr/virustotal-action' },
+  repo: { type: String, required: true },
 })
 </script>
 

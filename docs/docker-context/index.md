@@ -9,9 +9,15 @@ prev:
 
 <Badges owner="cssnr" repo="docker-context-action" />
 
+Set up a Remote Docker Context over SSH using Password or Keyfile Authentication.
+This allows all subsequent `docker` commands to run on the remote [host/context](https://docs.docker.com/engine/manage-resources/contexts/).
+
 [Docker Context Action](https://github.com/cssnr/docker-context-action?tab=readme-ov-file#readme)
 
-Set up a docker context in the current workflow to run `docker` commands in subsequent steps.
+_To easily deploy a swarm or compose stack use: [cssnr/stack-deploy-action](https://github.com/cssnr/stack-deploy-action)_  
+_To deploy directly to Portainer use: [cssnr/portainer-stack-deploy-action](https://github.com/cssnr/portainer-stack-deploy-action)_
+
+Check out this simple example to see how this works.
 
 ```yaml
 steps:
@@ -32,7 +38,18 @@ See the [Inputs Documentation](inputs.md) for additional options and **default v
 
 </div>
 
-See the [README.md](https://github.com/cssnr/docker-context-action?tab=readme-ov-file#readme) on [GitHub](https://github.com/cssnr/docker-context-action) for more details.
+## Features
+
+- Configure SSH using keyfile or password: [src/ssh.sh](https://github.com/cssnr/docker-context-action/blob/master/src/ssh.sh)
+- Creates and uses a remote docker context: [src/context.sh](https://github.com/cssnr/docker-context-action/blob/master/src/context.sh)
+- Option to run Docker login for any registry: [src/login.sh](https://github.com/cssnr/docker-context-action/blob/master/src/login.sh)
+- Clean up the authorized_keys file for password: [src/cleanup.sh](https://github.com/cssnr/docker-context-action/blob/master/src/cleanup.sh)
+
+Don't see your feature here? Please help by submitting a [Feature Request](https://github.com/cssnr/docker-context-action/discussions/categories/feature-requests).
+
+## Rolling Tags
+
+<RollingTags repo="cssnr/docker-context-action" />
 
 &nbsp;
 

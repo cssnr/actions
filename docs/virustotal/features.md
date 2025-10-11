@@ -44,4 +44,4 @@ You can view an actual workflow run from the [Test job](https://github.com/cssnr
 
 ## Rolling Tags
 
-<RollingTags />
+<RollingTags repo="cssnr/virustotal-action" />
