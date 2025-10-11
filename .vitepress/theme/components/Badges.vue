@@ -32,14 +32,14 @@ const badges = [
   //   src: `https://img.shields.io/github/actions/workflow/status/${name}/test.yaml?logo=cachet&label=test`,
   //   href: `https://github.com/${name}/actions/workflows/test.yaml`,
   // },
-  {
-    src: `https://img.shields.io/github/actions/workflow/status/${name}/lint.yaml?logo=cachet&label=lint`,
-    href: `https://github.com/${name}/actions/workflows/lint.yaml`,
-  },
-  {
-    src: `https://sonarcloud.io/api/project_badges/measure?project=${props.owner}_${props.repo}&metric=alert_status`,
-    href: `https://sonarcloud.io/summary/new_code?id=${props.owner}_${props.repo}`,
-  },
+  // {
+  //   src: `https://img.shields.io/github/actions/workflow/status/${name}/lint.yaml?logo=cachet&label=lint`,
+  //   href: `https://github.com/${name}/actions/workflows/lint.yaml`,
+  // },
+  // {
+  //   src: `https://sonarcloud.io/api/project_badges/measure?project=${props.owner}_${props.repo}&metric=alert_status`,
+  //   href: `https://sonarcloud.io/summary/new_code?id=${props.owner}_${props.repo}`,
+  // },
   {
     src: `https://img.shields.io/github/last-commit/${name}?logo=github&label=updated`,
     href: `https://github.com/${name}/pulse`,

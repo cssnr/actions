@@ -14,32 +14,14 @@ title: Inputs Documentation
 | [rate_limit](#rate_limit) <CB />           | `4`                           | API Calls Per Minute                               |
 | [release_id](#release_id) <CB />           | -                             | Release ID to Process                              |
 | [sha256](#sha256) <CB />                   | `false`                       | Calculate File SHA256                              |
+| [summary](#summary) <CB />                 | `true`                        | Add Summary to Job                                 |
+| [github_token](#github_token) <CB />       | `github.token`                | For use with a PAT                                 |
 | [update_release](#update_release) <CB />   | `true`                        | Update the                                         |
 | [release_heading](#release_heading) <CB /> | _[see below](#release-notes)_ | Release Notes Heading                              |
 | [collapsed](#collapsed) <CB />             | `false`                       | Show Links Collapsed.                              |
 | [file_name](#file_name) <CB />             | `name`                        | File Name Display: [`name`, `id`]                  |
-| [summary](#summary) <CB />                 | `true`                        | Add Summary to Job                                 |
-| [github_token](#github_token) <CB />       | `github.token`                | For use with a PAT                                 |
 
 > For more details on inputs, see the VirusTotal API [documentation](https://docs.virustotal.com/reference/overview).
-
-<details><summary>Example with all Inputs</summary>
-
-```yaml
-- name: 'VirusTotal'
-  uses: cssnr/virustotal-action@v1
-  with:
-    vt_api_key: ${{ secrets.VT_API_KEY }}
-    file_globs: |
-      file1
-      release/*
-    rate_limit: 4
-    update_release: true
-    release_heading: '🛡️ **VirusTotal Results:**'
-    summary: true
-```
-
-</details>
 
 See the [Examples](examples.md) section for more options.
 
@@ -58,6 +40,8 @@ For glob pattern, see [examples](examples.md) and the [docs](https://github.com/
 
 Rate limit for file uploads. Set to `0` to disable if you know what you are doing.
 
+Default: `4`
+
 #### release_id {#release_id}
 
 If provided, will process the corresponding release.
@@ -66,23 +50,36 @@ By providing a release ID, this action does not need to run on a release event t
 
 #### sha256 {#sha256}
 
+The SHA256 hash is not returned by the API; however, can be optionally calculated for additional overhead.
 If enabled this will calculate the file's SHA256 hash, and include it in the output.
+
+Default: `false`
 
 #### summary {#summary}
 
 Will add result details to the job summary in the workflow.
 
-<details><summary>👀 View Job Summary Example</summary>
-
----
+::: details View Job Summary Example
 
 <!--@include: include/summary.md-->
 
----
-
-</details>
+:::
 
 To view a workflow run, click on a recent [Test](https://github.com/cssnr/virustotal-action/actions/workflows/test.yaml) job _(requires login)_.
+
+Default: `true`
+
+#### github_token {#github_token}
+
+<span v-pre>
+
+The `${{ github.token }}` / `${{ secrets.GITHUB_TOKEN }}` is automatically passed, there is no need to manually pass these!
+
+This is only available to allow users to pass a different token they have created and defined in their `secrets` for explicit use with a PAT.
+
+Default: `${{ github.token }}`
+
+</span>
 
 ## Release Notes
 
@@ -97,25 +94,22 @@ Example Release Notes.
 
 If triggered from a release workflow, will update the release notes and append the results.
 
+Default: `true`
+
 #### release_heading {#release_heading}
 
-Customize the Release Notes Heading.  
+Customize the Release Notes Heading.
+
 Default: `🛡️ **VirusTotal Results:**`
 
-#### collapsed {#collapsed}
+#### collapsed <Badge type="warning" text="Experimental" /> {#collapsed}
 
-Set to `true` to collapse the result links by default. _Experimental._
+Set to `true` to collapse the result links by default.
+
+Default: `false`
 
 #### file_name {#file_name}
 
 Customize the Release Notes File Name Display. This can be one of `name`, or `id`.
 
-#### github_token {#github_token}
-
-<span v-pre>
-
-The `${{ github.token }}` / `${{ secrets.GITHUB_TOKEN }}` is automatically passed, there is no need to manually pass these!
-
-This is only available to allow users to pass a different token they have created and defined in their `secrets` for explicit use with a PAT.
-
-</span>
+Default: `name`

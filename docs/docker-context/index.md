@@ -14,8 +14,8 @@ This allows all subsequent `docker` commands to run on the remote [host/context]
 
 [Docker Context Action](https://github.com/cssnr/docker-context-action?tab=readme-ov-file#readme)
 
-_To easily deploy a swarm or compose stack use: [cssnr/stack-deploy-action](https://github.com/cssnr/stack-deploy-action)_  
-_To deploy directly to Portainer use: [cssnr/portainer-stack-deploy-action](https://github.com/cssnr/portainer-stack-deploy-action)_
+_To easily deploy a swarm or compose stack use: [cssnr/stack-deploy-action](https://github.com/cssnr/stack-deploy-action?tab=readme-ov-file#readme)_  
+_To deploy directly to Portainer use: [cssnr/portainer-stack-deploy-action](https://github.com/cssnr/portainer-stack-deploy-action?tab=readme-ov-file#readme)_
 
 To get started, create or update your [workflow file](#workflow).
 
