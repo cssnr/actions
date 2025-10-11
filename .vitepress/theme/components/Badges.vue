@@ -85,7 +85,7 @@ const badges = [
 
 <style scoped>
 .badges {
-  margin-top: 16px;
+  margin: 16px 0;
   /*text-align: center;*/
 }
 

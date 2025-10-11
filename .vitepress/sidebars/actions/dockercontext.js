@@ -11,15 +11,15 @@ export default [
       // { text: 'Features', link: '/features' },
     ],
   },
-  // {
-  //   text: 'Documentation',
-  //   base,
-  //   items: [
-  //     { text: 'Inputs', link: '/inputs' },
-  //     { text: 'Outputs', link: '/outputs' },
-  //     { text: 'Examples', link: '/examples' },
-  //   ],
-  // },
+  {
+    text: 'Documentation',
+    base,
+    items: [
+      { text: 'Inputs', link: '/inputs' },
+      // { text: 'Outputs', link: '/outputs' },
+      // { text: 'Examples', link: '/examples' },
+    ],
+  },
   // {
   //   text: 'Links',
   //   base,
