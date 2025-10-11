@@ -1,9 +1,12 @@
-import actions from '../theme/configs/actions.js'
+export const items = [
+  { text: 'VirusTotal', link: '/virustotal', activeMatch: '/virustotal' },
+  { text: 'Docker Context', link: '/docker-context', activeMatch: '/docker-context' },
+]
 
 export const directory = {
   text: 'Actions',
   collapsed: true,
-  items: actions,
+  items: items,
 }
 
 export default [

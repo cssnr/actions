@@ -1,8 +1,9 @@
 import virustotal from './actions/virustotal.js'
-import { directory } from './default.js'
+import { directory, items } from './default.js'
 import dockercontext from './actions/dockercontext.js'
 
 export default {
+  items,
   directory,
   actions: {
     '/virustotal/': virustotal,

@@ -1,7 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
 
-import actions from './theme/configs/actions.js'
 import sidebars from './sidebars'
 
 const settings = {
@@ -77,7 +76,7 @@ export default defineConfig({
       {
         component: 'ActionsNavigation',
         props: {
-          actions,
+          actions: sidebars.items,
         },
       },
       // { text: 'Home', link: '/' },
