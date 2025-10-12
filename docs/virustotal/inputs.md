@@ -27,35 +27,35 @@ See the [Examples](examples.md) section for more options.
 
 ## Details
 
-#### vt_api_key <Badge type="warning" text="Required" /> {#vt_api_key}
+#### vt_api_key <CB /> <Badge type="warning" text="Required" /> {#vt_api_key}
 
 Get your API key from: https://www.virustotal.com/gui/my-apikey
 
-#### file_globs {#file_globs}
+#### file_globs <CB /> {#file_globs}
 
 If provided, will process matching files instead of release assets.  
 For glob pattern, see [examples](examples.md) and the [docs](https://github.com/actions/toolkit/tree/main/packages/glob#patterns).
 
-#### rate_limit {#rate_limit}
+#### rate_limit <CB /> {#rate_limit}
 
 Rate limit for file uploads. Set to `0` to disable if you know what you are doing.
 
 Default: `4`
 
-#### release_id {#release_id}
+#### release_id <CB /> {#release_id}
 
 If provided, will process the corresponding release.
 The release ID can be generated from a previous step.
 By providing a release ID, this action does not need to run on a release event to process a release.
 
-#### sha256 {#sha256}
+#### sha256 <CB /> {#sha256}
 
 The SHA256 hash is not returned by the API; however, can be optionally calculated for additional overhead.
 If enabled this will calculate the file's SHA256 hash, and include it in the output.
 
 Default: `false`
 
-#### summary {#summary}
+#### summary <CB /> {#summary}
 
 Will add result details to the job summary in the workflow.
 
@@ -69,7 +69,7 @@ To view a workflow run, click on a recent [Test](https://github.com/cssnr/virust
 
 Default: `true`
 
-#### github_token {#github_token}
+#### github_token <CB /> {#github_token}
 
 <span v-pre>
 
@@ -90,25 +90,25 @@ Example Release Notes.
 
 <!--@include: include/notes.md-->
 
-#### update_release {#update_release}
+#### update_release <CB /> {#update_release}
 
 If triggered from a release workflow, will update the release notes and append the results.
 
 Default: `true`
 
-#### release_heading {#release_heading}
+#### release_heading <CB /> {#release_heading}
 
 Customize the Release Notes Heading.
 
 Default: `🛡️ **VirusTotal Results:**`
 
-#### collapsed <Badge type="warning" text="Experimental" /> {#collapsed}
+#### collapsed <CB /> <Badge type="warning" text="Experimental" /> {#collapsed}
 
 Set to `true` to collapse the result links by default.
 
 Default: `false`
 
-#### file_name {#file_name}
+#### file_name <CB /> {#file_name}
 
 Customize the Release Notes File Name Display. This can be one of `name`, or `id`.
 

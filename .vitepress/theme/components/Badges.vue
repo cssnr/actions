@@ -82,7 +82,7 @@ const badges = [
 
 <template>
   <div class="badges">
-    <div>
+    <div style="min-height: 50px">
       <a v-for="{ src, href } in badges" :key="src" :href="href" target="_blank" rel="noopener">
         <img :src="src" alt="Badge" />
       </a>

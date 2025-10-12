@@ -5,31 +5,31 @@ title: Inputs Documentation
 
 # Inputs
 
-💡 Click on the **Input Name** for more [Details](#details).
+All inputs are optional. Click on the **Input Name** for more [Details](#details).
 
-| Input                        | Default&nbsp;Value | Description&nbsp;of&nbsp;Input   |
-| :--------------------------- | :----------------- | :------------------------------- |
-| [prefix](#prefix) <CB />     | `v`                | Tag Prefix for Semantic Versions |
-| [major](#major-minor) <CB /> | `true`             | Update Major Tag                 |
-| [minor](#major-minor) <CB /> | `true`             | Update Minor Tag                 |
-| [tags](#tags) <CB />         | -                  | Additional Tags to Update        |
-| [tag](#tag) <CB />           | `github.ref_name`  | Manually Set Target Tag          |
-| [create](#create) <CB />     | `false`            | Create Target Tag                |
-| [summary](#summary) <CB />   | `true`             | Add Summary to Job               |
-| [dry_run](#dry_run) <CB />   | `false`            | Do not Create Tags, Outout Only  |
-| [token](#token) <CB />       | `github.token`     | For use with a PAT to Rollback   |
+| Input                        | Default&nbsp;Value | Short&nbsp;Description&nbsp;of&nbsp;the&nbsp;Input&nbsp;Value |
+| :--------------------------- | :----------------- | :------------------------------------------------------------ |
+| [prefix](#prefix) <CB />     | `v`                | Tag Prefix for Semantic Versions                              |
+| [major](#major-minor) <CB /> | `true`             | Update Major Tag                                              |
+| [minor](#major-minor) <CB /> | `true`             | Update Minor Tag                                              |
+| [tags](#tags) <CB />         | -                  | Additional Tags to Update                                     |
+| [tag](#tag) <CB />           | `github.ref_name`  | Manually Set Target Tag                                       |
+| [create](#create) <CB />     | `false`            | Create Target Tag                                             |
+| [summary](#summary) <CB />   | `true`             | Add Summary to Job                                            |
+| [dry_run](#dry_run) <CB />   | `false`            | Do not Create Tags, Outout Only                               |
+| [token](#token) <CB />       | `github.token`     | For use with a PAT to Rollback                                |
 
 See the [Examples](#examples) section for more options.
 
 ## Details
 
-#### prefix
+#### prefix <CB />
 
 To disable the prefix, set it to an empty string `prefix: ''`
 
 Default: `v`
 
-#### major/minor
+#### major/minor <CB text="major" /> <CB text="minor" />
 
 Both major and minor versions are parsed from the release tag using `semver`. If you release
 version `1.0.0` this will update or create a reference for `v1` and `v1.0`. If you are not using semantic versions, set
@@ -37,14 +37,14 @@ both to `false` and provide your own `tags`.
 
 Default: `true`
 
-#### tags
+#### tags <CB />
 
 The `prefix` is not applied to specified tags. These can be a string list `"v1,v1.0"` or newline
 delimited `|`.
 
 To only update the specified `tags` set both `major` and `minor` to `false`. <Badge type="warning" text="Important" />
 
-#### tag
+#### tag <CB />
 
 This is the target tag to parse the `sha` from. Defaults to the `sha` that triggered the workflow.
 To override this behavior you can specify a target tag here from which the target `sha` will be parsed.
@@ -57,13 +57,13 @@ Default: `${{ github.ref_name }}`
 
 </span>
 
-#### create
+#### create <CB />
 
 If `true` this will create the `tag` at the current `sha` of the workflow run.
 
 Default: `false`
 
-#### summary
+#### summary <CB />
 
 Write a Summary for the job. To disable this set to `false`.
 
@@ -107,13 +107,13 @@ dry_run: false
 
 Default: `true`
 
-#### dry_run {#dry_run}
+#### dry_run <CB /> {#dry_run}
 
 If this is `true` no tags will be created/updated and will only output the results.
 
 Default: `false`
 
-#### token
+#### token <CB />
 
 GitHub workflow tokens do not allow for rolling back or deleting tags.
 To do this you must create a PAT with the `repo` and `workflow` permissions, add it to secrets, and use it.

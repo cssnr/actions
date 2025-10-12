@@ -7,16 +7,16 @@ title: Inputs Documentation
 
 💡 Click on the **Input Name** for more [Details](#details).
 
-| Input&nbsp;Name                        | Default&nbsp;Value | Short&nbsp;Description           |
-| :------------------------------------- | :----------------- | :------------------------------- |
-| [host](#host) <CB />                   | _Required_         | Remote Docker Hostname or IP     |
-| [port](#port) <CB />                   | `22`               | Remote Docker Port               |
-| [user](#user) <CB />                   | _Required_         | Remote Docker Username           |
-| [pass](#pass) <CB />                   | _Required_         | Remote Docker Password           |
-| [ssh_key](#ssh_key) <CB />             | _Required_         | Remote SSH Key File              |
-| [registry_host](#registry_host) <CB /> | -                  | Registry Authentication Host     |
-| [registry_user](#registry_user) <CB /> | -                  | Registry Authentication Username |
-| [registry_pass](#registry_pass) <CB /> | -                  | Registry Authentication Password |
+| Input&nbsp;Name                        | Default&nbsp;Value | Short&nbsp;Description&nbsp;of&nbsp;the&nbsp;Input&nbsp;Value |
+| :------------------------------------- | :----------------- | :------------------------------------------------------------ |
+| [host](#host) <CB />                   | _Required_         | Remote Docker Hostname or IP                                  |
+| [port](#port) <CB />                   | `22`               | Remote Docker Port                                            |
+| [user](#user) <CB />                   | _Required_         | Remote Docker Username                                        |
+| [pass](#pass) <CB />                   | _Required_         | Remote Docker Password                                        |
+| [ssh_key](#ssh_key) <CB />             | _Required_         | Remote SSH Key File                                           |
+| [registry_host](#registry_host) <CB /> | -                  | Registry Authentication Host                                  |
+| [registry_user](#registry_user) <CB /> | -                  | Registry Authentication Username                              |
+| [registry_pass](#registry_pass) <CB /> | -                  | Registry Authentication Password                              |
 
 See the [Examples](#examples) section for more options.
 
