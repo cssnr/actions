@@ -12,6 +12,7 @@ All inputs are optional. Click on the **Input Name** for more [Details](#details
 | [prefix](#prefix) <CB />     | `v`                | Tag Prefix for Semantic Versions                              |
 | [major](#major-minor) <CB /> | `true`             | Update Major Tag                                              |
 | [minor](#major-minor) <CB /> | `true`             | Update Minor Tag                                              |
+| [release](#release) <CB />   | `false`            | Update Release Tag                                            |
 | [tags](#tags) <CB />         | -                  | Additional Tags to Update                                     |
 | [tag](#tag) <CB />           | `github.ref_name`  | Manually Set Target Tag                                       |
 | [create](#create) <CB />     | `false`            | Create Target Tag                                             |
@@ -36,6 +37,12 @@ version `1.0.0` this will update or create a reference for `v1` and `v1.0`. If y
 both to `false` and provide your own `tags`.
 
 Default: `true`
+
+#### release <CB />
+
+If you provide a non-release tag `1.2.3-release.1` this would create the release tag `1.2.3`.
+
+Default: `false`
 
 #### tags <CB />
 
