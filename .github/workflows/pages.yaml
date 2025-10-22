@@ -3,12 +3,11 @@ name: "Pages"
 on:
   workflow_dispatch:
   push:
-    branches:
-      - "master"
+    branches: ["master"]
     paths:
       - ".github/workflows/pages.yaml"
-      - "docs/**"
       - ".vitepress/**"
+      - "docs/**"
       - "package*.json"
 
 env:
