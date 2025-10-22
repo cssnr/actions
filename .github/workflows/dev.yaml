@@ -104,12 +104,16 @@ jobs:
           Disallow: /
           EOF
 
+      - name: "Setup SSH"
+        run: |
+          mkdir -p "${HOME}/.ssh" && chmod 0700 "${HOME}/.ssh"
+          ssh-keyscan -p "${{ env.SSH_PORT }}" -H "${{ env.SSH_HOST }}" \
+            | tee -a "${HOME}/.ssh/known_hosts"
+
       - name: "Deploy Artifact"
         env:
           SSHPASS: ${{ env.SSH_PASS }}
         run: |
-          ssh-keyscan -p "${{ env.SSH_PORT }}" -H "${{ env.SSH_HOST }}" \
-            | tee -a "${HOME}/.ssh/known_hosts"
           sshpass -e rsync -aPvh --delete -e 'ssh -p ${{ env.SSH_PORT }}' \
             ./ "${{ env.SSH_USER }}"@"${{ env.SSH_HOST }}":"${{ env.SSH_DEST }}"
 
