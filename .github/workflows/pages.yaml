@@ -3,7 +3,7 @@ name: "Pages"
 on:
   workflow_dispatch:
   push:
-    branches: ["master"]
+    branches: [master]
     paths:
       - ".github/workflows/pages.yaml"
       - ".vitepress/**"
@@ -79,7 +79,7 @@ jobs:
           crawler_user_id: ${{ secrets.CRAWLER_USER_ID }}
           crawler_api_key: ${{ secrets.CRAWLER_API_KEY }}
 
-      - name: "Send Post-Deploy Notification"
+      - name: "Send Discord Notification"
         if: ${{ failure() }}
         uses: sarisia/actions-status-discord@v1
         with:
