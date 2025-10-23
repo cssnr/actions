@@ -2,6 +2,7 @@ export const items = [
   { text: 'VirusTotal', link: '/virustotal', activeMatch: '/virustotal' },
   { text: 'Docker Context', link: '/docker-context', activeMatch: '/docker-context' },
   { text: 'Update Version Tags', link: '/update-version-tags', activeMatch: '/update-version-tags' },
+  { text: 'Mirror Repository', link: '/mirror-repository', activeMatch: '/mirror-repository' },
 ]
 
 export const directory = {

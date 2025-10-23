@@ -82,12 +82,6 @@ const badges = [
 
 <template>
   <div class="badges">
-    <div style="min-height: 50px">
-      <a v-for="{ src, href } in badges" :key="src" :href="href" target="_blank" rel="noopener">
-        <img :src="src" alt="Badge" />
-      </a>
-    </div>
-
     <div class="badge-links">
       <a :href="`https://github.com/${repo}`" target="_blank" rel="noopener">
         <picture>
@@ -120,6 +114,12 @@ const badges = [
             alt="Marketplace"
           />
         </picture>
+      </a>
+    </div>
+
+    <div style="min-height: 50px">
+      <a v-for="{ src, href } in badges" :key="src" :href="href" target="_blank" rel="noopener">
+        <img :src="src" alt="Badge" />
       </a>
     </div>
   </div>
