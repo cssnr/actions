@@ -5,7 +5,7 @@ prev:
   link: /actions
 ---
 
-# Update Version Tags
+# Update Version Tags Action
 
 <Badges owner="cssnr" repo="update-version-tags-action" name="update-version-tags-action" />
 

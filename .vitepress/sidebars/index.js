@@ -7,10 +7,11 @@ import mirrorRepository from './actions/mirrorRepository'
 export default {
   items,
   directory,
+  // order of actions is irrelevant here
   actions: {
     '/virustotal/': virustotal,
     '/docker-context/': dockerContext,
-    '/update-version-tags/': updateVersionTags,
     '/mirror-repository/': mirrorRepository,
+    '/update-version-tags/': updateVersionTags,
   },
 }
