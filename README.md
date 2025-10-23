@@ -2,7 +2,7 @@
 [![GitHub Pages](https://img.shields.io/github/actions/workflow/status/cssnr/actions/pages.yaml?logo=cachet&label=pages)](https://github.com/cssnr/actions/actions/workflows/pages.yaml)
 [![GitHub Lint](https://img.shields.io/github/actions/workflow/status/cssnr/actions/lint.yaml?logo=cachet&label=lint)](https://github.com/cssnr/actions/actions/workflows/lint.yaml)
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/cssnr/actions?logo=vitepress&logoColor=white&label=updated)](https://github.com/cssnr/actions/pulse)
-[![GitHub Contributors](https://img.shields.io/github/contributors/cssnr/actions?logo=github)](https://github.com/cssnr/actions/graphs/contributors)
+[![GitHub Contributors](https://img.shields.io/github/contributors-anon/cssnr/actions?logo=github)](https://github.com/cssnr/actions/graphs/contributors)
 [![GitHub Repo Size](https://img.shields.io/github/repo-size/cssnr/actions?logo=bookstack&logoColor=white&label=repo%20size)](https://github.com/cssnr/actions)
 [![GitHub Discussions](https://img.shields.io/github/discussions/cssnr/actions?logo=github)](https://github.com/cssnr/actions/discussions)
 [![GitHub Repo Stars](https://img.shields.io/github/stars/cssnr/actions?style=flat&logo=github)](https://github.com/cssnr/actions)
