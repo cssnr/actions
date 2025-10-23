@@ -83,30 +83,13 @@ Authentication password or token associated with the [username](#username).
 
 Write a Summary for the job. To disable this set to `false`.
 
-<details><summary>👀 View Example Job Summary</summary>
+::: details View Example Job Summary
 
 ---
 
-✅ Successfully Mirrored: `cssnr/mirror-repository-action`
+<!--@include: include/summary.md-->
 
-- https://codeberg.org/cssnr/mirror-repository-action
-
-<details><summary>Results</summary>
-
-```text
-remote:
-remote: Create a new pull request for 'updates':
-remote:   https://codeberg.org/cssnr/mirror-repository-action/compare/master...updates
-remote:
-To https://codeberg.org/cssnr/mirror-repository-action
-   eaadc3f..da84f34  origin/updates -> updates
-```
-
-</details>
-
----
-
-</details>
+:::
 
 Default: `true`
 

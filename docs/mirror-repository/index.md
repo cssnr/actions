@@ -9,11 +9,12 @@ prev:
 
 <Badges owner="cssnr" repo="mirror-repository-action" name="mirror-repository-action" />
 
-Mirror Git Repository to Remote Host.
-
-[Mirror Repository Action](https://github.com/cssnr/mirror-repository-action?tab=readme-ov-file#readme)
+Mirror Git Repository to Remote Host. Supports automatic repository detection,
+partial and full overrides, authentication, auto-create destination, and [much more](#features).
 
 To get started, create or update your [workflow file](#workflow).
+
+[Mirror Repository Action](https://github.com/cssnr/mirror-repository-action?tab=readme-ov-file#readme)
 
 ## Workflow
 
