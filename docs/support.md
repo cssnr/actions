@@ -10,7 +10,7 @@ For help with a specific action, create an Issue or start a Discussion in that r
 
 Likewise, you can get support for anything on [Discord](#discord-chat) or send us [General Feedback](#general-feedback).
 
-[[toc]]
+Feel free to contact me about anything or check out the additional [Links](#links).
 
 ### Discord Chat
 
@@ -28,8 +28,9 @@ You can submit general feedback via the [web form](https://cssnr.github.io/feedb
 
 ## Links
 
-- [CSSNR Discord](https://discord.gg/wXy6m2X8wY)
-- [GitHub Organization](https://github.com/cssnr)
+- [Website](https://cssnr.github.io/)
+- [Discord](https://discord.gg/wXy6m2X8wY)
+- [GitHub Org](https://github.com/cssnr)
 - [GitHub Profile](https://github.com/smashedr)
 - [NPM Profile](https://www.npmjs.com/~smashed)
 - [PyPI Profile](https://pypi.org/user/smashed/)
