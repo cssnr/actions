@@ -22,6 +22,7 @@ export default {
     'cssnr/web-request-action',
   ],
   unpublished: [
+    'cssnr/create-files-action',
     'cssnr/draft-release-action',
     'cssnr/env-json-action',
     'cssnr/push-artifacts-action',
