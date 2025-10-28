@@ -4,6 +4,7 @@ import dockerContext from './actions/dockerContext.js'
 import mirrorRepository from './actions/mirrorRepository'
 import updateVersionTags from './actions/updateVersionTags'
 import cloudflarePurgeCache from './actions/cloudflarePurgeCache'
+import webRequest from './actions/webRequest'
 
 export default {
   items,
@@ -15,5 +16,6 @@ export default {
     '/mirror-repository/': mirrorRepository,
     '/update-version-tags/': updateVersionTags,
     '/cloudflare-purge-cache/': cloudflarePurgeCache,
+    '/web-request/': webRequest,
   },
 }
