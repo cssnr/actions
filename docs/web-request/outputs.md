@@ -7,16 +7,21 @@ title: Outputs Documentation
 
 Details about the stack are output for use in additional steps.
 
-| Input&nbsp;Name          | Output&nbsp;Description |
-| :----------------------- | :---------------------- |
-| [status](#status) <CB /> | Response Status         |
-| [data](#data) <CB />     | Response Data           |
+| Output&nbsp;Name           | Output&nbsp;Description |
+| :------------------------- | :---------------------- |
+| [status](#status) <CB />   | Response Status         |
+| [headers](#headers) <CB /> | Response Headers        |
+| [data](#data) <CB />       | Response Data           |
 
 See the [Workflow Usage](#workflow-usage) section for example usage.
 
 ### status <CB />
 
 Response Status Code
+
+### headers <CB />
+
+Response Headers
 
 ### data <CB />
 
