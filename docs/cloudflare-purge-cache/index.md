@@ -11,7 +11,7 @@ prev:
 
 Purge Cloudflare cache for a zone or list of zones with optional filters including files, prefixes, tags, and hosts.
 
-Loaded with [Options](inputs.md) including job summary, fail mode, dry run, custom files prefix and [Outputs](outputs.md).
+Loaded with [Features](#features) including job summary, fail mode, dry run, input conditionals, plus more [Inputs](inputs.md) and [Outputs](outputs.md).
 
 To get started, create or update your [workflow file](#workflow).
 
