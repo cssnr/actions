@@ -1,8 +1,9 @@
 import virustotal from './actions/virustotal.js'
 import { directory, items } from './default.js'
 import dockerContext from './actions/dockerContext.js'
-import updateVersionTags from './actions/updateVersionTags'
 import mirrorRepository from './actions/mirrorRepository'
+import updateVersionTags from './actions/updateVersionTags'
+import cloudflarePurgeCache from './actions/cloudflarePurgeCache'
 
 export default {
   items,
@@ -13,5 +14,6 @@ export default {
     '/docker-context/': dockerContext,
     '/mirror-repository/': mirrorRepository,
     '/update-version-tags/': updateVersionTags,
+    '/cloudflare-purge-cache/': cloudflarePurgeCache,
   },
 }

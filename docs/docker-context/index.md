@@ -28,7 +28,7 @@ Add the step to an existing workflow or create a new one.
 <<< snippets/workflow.yaml {13 yaml} [New Workflow ~vscode-icons:folder-type-github~]
 :::
 
-<LatestVersionBadge repo="cssnr/update-version-tags-action" />
+<LatestVersionBadge repo="cssnr/docker-context-action" />
 
 Check out the [Rolling Tags](#rolling-tags) for more tag options.
 
