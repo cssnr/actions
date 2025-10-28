@@ -3,6 +3,7 @@ export const items = [
   { text: 'Docker Context', link: '/docker-context', activeMatch: '/docker-context' },
   { text: 'Mirror Repository', link: '/mirror-repository', activeMatch: '/mirror-repository' },
   { text: 'Update Version Tags', link: '/update-version-tags', activeMatch: '/update-version-tags' },
+  { text: 'Cloudflare Purge', link: '/cloudflare-purge-cache', activeMatch: '/cloudflare-purge-cache' },
 ]
 
 export const directory = {

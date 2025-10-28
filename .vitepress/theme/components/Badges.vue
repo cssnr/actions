@@ -4,11 +4,12 @@ const props = defineProps({
   owner: { type: String, required: true },
   repo: { type: String, required: true },
   name: { type: String, default: null },
+  image: { type: String, default: null },
 })
 
 const repo = `${props.owner}/${props.repo}`
 
-const badges = [
+let badges = [
   {
     src: `https://img.shields.io/github/v/tag/${repo}?sort=semver&filter=!v*.*&logo=git&logoColor=white&labelColor=585858&label=%20`,
     href: `https://github.com/${repo}/tags`,
@@ -20,6 +21,11 @@ const badges = [
   {
     src: `https://img.shields.io/github/v/release/${repo}?logo=git&logoColor=white&labelColor=585858&label=%20`,
     href: `https://github.com/${repo}/releases/latest`,
+  },
+  {
+    src: `https://badges.cssnr.com/ghcr/size/${props.owner}/${props.image}`,
+    href: `https://github.com/${repo}/releases/latest`,
+    image: true,
   },
   // {
   //   src: `https://img.shields.io/github/size/${repo}/dist%2Findex.js?logo=bookstack&logoColor=white&label=dist%20size`,
@@ -78,6 +84,8 @@ const badges = [
     href: `https://github.com/${repo}/stargazers`,
   },
 ]
+
+if (!props.image) badges = badges.filter((b) => !b.image)
 </script>
 
 <template>
