@@ -13,8 +13,6 @@ Purge Cloudflare cache for a zone or list of zones with optional filters includi
 
 Loaded with [Options](inputs.md) including job summary, fail mode, dry run, custom files prefix and [Outputs](outputs.md).
 
-[Cloudflare Purge Cache Action](https://github.com/cssnr/cloudflare-purge-cache-action?tab=readme-ov-file#readme)
-
 To get started, create or update your [workflow file](#workflow).
 
 ## Workflow
