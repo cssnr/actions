@@ -12,7 +12,7 @@ Details about the stack are output for use in additional steps.
 | [success](#success) <CB /> | Successful Zones, CSV   |
 | [failed](#failed) <CB />   | Failed Zones, CSV       |
 
-See the [Examples](examples.md) section for more options.
+See the [Workflow Usage](#workflow-usage) section for example usage.
 
 ### success <CB /> {#success}
 
