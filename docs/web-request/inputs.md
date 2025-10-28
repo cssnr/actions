@@ -103,7 +103,8 @@ For more information on inputs, see: https://axios-http.com/docs/req_config
   uses: cssnr/web-request-action@v1
   with:
     url: ${{ secrets.RENDER_HOOK }}
-    params: '{"imgURL": "ghcr.io/${{ github.repository }}:${{ github.ref_name }}"}'
+    params: |
+      imgURL: ghcr.io/${{ github.repository }}:${{ github.ref_name }}
 ```
 
 </details>
@@ -137,6 +138,7 @@ For more information on inputs, see: https://axios-http.com/docs/req_config
   with:
     url: https://httpbin.org/post
     file: path/to/file.txt
+    name: file # Default - name of file key
 ```
 
 </details>
@@ -149,8 +151,12 @@ For more information on inputs, see: https://axios-http.com/docs/req_config
     url: https://httpbin.org/post
     method: 'POST'
     data: '{"key": "value"}'
-    headers: '{"header": "value"}'
-    params: '{"parameter": "value"}'
+    headers: |
+      key: value
+    params: |
+      {
+        "key": "value"
+      }
     username: ${{ secrets.USERNAME }}
     password: ${{ secrets.PASSWORD }}
     insecure: false
