@@ -1,0 +1,14 @@
+- name: "Web Request"
+  uses: cssnr/web-request-action@v1
+  with:
+    url: https://httpbin.org/post
+    method: "POST"
+    data: '{"key": "value"}' # JSON or YAML
+    headers: |
+      key: value
+    params: { "parameter": "value" }
+    username: ${{ secrets.USERNAME }}
+    password: ${{ secrets.PASSWORD }}
+    insecure: false
+    file: path/to/file.txt
+    name: file
