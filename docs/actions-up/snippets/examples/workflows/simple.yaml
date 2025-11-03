@@ -1,0 +1,27 @@
+name: "Pull"
+
+on:
+  pull_request_target:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  pull:
+    name: "Pull"
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    permissions:
+      pull-requests: write
+      issues: write
+
+    steps:
+      - name: "Checkout Pull"
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: "Actions Up"
+        uses: cssnr/actions-up-action@master

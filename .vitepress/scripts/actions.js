@@ -1,5 +1,6 @@
 export default {
   published: [
+    'cssnr/actions-up-action',
     'cssnr/algolia-crawler-action',
     'cssnr/check-build-action',
     'cssnr/cloudflare-purge-cache-action',
