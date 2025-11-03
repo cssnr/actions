@@ -1,0 +1,5 @@
+- name: "Actions Up"
+  uses: cssnr/actions-up-action@master
+  with:
+    excludes: "actions/.*,docker/.*"
+    columns: "n,l,s"

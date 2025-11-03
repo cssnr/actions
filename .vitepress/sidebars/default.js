@@ -5,6 +5,7 @@ export const items = [
   { text: 'Update Version Tags', link: '/update-version-tags', activeMatch: '/update-version-tags' },
   { text: 'Cloudflare Purge', link: '/cloudflare-purge-cache', activeMatch: '/cloudflare-purge-cache' },
   { text: 'Web Request', link: '/web-request', activeMatch: '/web-request' },
+  { text: 'Actions Up', link: '/actions-up', activeMatch: '/actions-up' },
 ]
 
 export const directory = {
