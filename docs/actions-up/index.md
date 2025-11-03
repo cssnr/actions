@@ -9,7 +9,7 @@ prev:
 
 <Badges owner="cssnr" repo="actions-up-action" name="actions-up" />
 
-Check Actions for Updates with [actions-up](https://github.com/azat-io/actions-up) and report out-of-date actions in Pull Requests, Workflow Outputs, or via the Job Status.
+Check Actions for Updates with [actions-up](https://github.com/azat-io/actions-up) and report out-of-date actions in Pull Requests, Workflow [Outputs](outputs.md), or via the Job Status.
 
 Generates a customizable table of available updates.
 Post the table to a comment on a Pull Request.
@@ -38,6 +38,8 @@ Scanned 8 workflows, checked 12 actions and found 6 updates.
 </details>
 
 :::
+
+See the [Features](features.md) and [Inputs](inputs.md) documentation for more details.
 
 To get started, create or update your [workflow file](#workflow) and review the [permissions](#permissions).
 
