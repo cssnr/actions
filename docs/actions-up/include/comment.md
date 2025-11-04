@@ -14,5 +14,5 @@ Scanned 8 workflows, checked 13 actions and found 6 updates.
 </details>
 
 ```shell
-actions-up --exclude "actions/.*" --yes
+npx actions-up --exclude "actions/.*" --yes
 ```
