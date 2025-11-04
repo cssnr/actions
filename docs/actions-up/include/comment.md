@@ -12,3 +12,7 @@ Scanned 8 workflows, checked 13 actions and found 6 updates.
 | [cssnr/update-version-tags-action](https://github.com/cssnr/update-version-tags-action) | [tags.yaml](https://github.com/smashedr/js-test-action/blob/updates/.github/workflows/tags.yaml#L21)               |    -     | v1.3.1 |
 
 </details>
+
+```shell
+actions-up --exclude "cssnr/.*,actions/.*" --yes
+```
