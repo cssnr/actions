@@ -13,7 +13,8 @@ title: Inputs Documentation
 | [heading](#heading) <CB /> | `### Actions Up`   | Comment Heading                                    |
 | [open](#open) <CB />       | `true`             | Details Open by Default                            |
 | [columns](#columns) <CB /> | `n,f,b,l`          | Results Table Columns                              |
-| [exclude](#exclude) <CB /> | -                  | CSV or Newline List of Excludes                    |
+| [exclude](#exclude) <CB /> | -                  | List of Action Regex to Exclude                    |
+| [files](#files) <CB />     | -                  | List of File Names to Exclude                      |
 | [fail](#fail) <CB />       | `false`            | Fail Job if Updates are Found                      |
 | [summary](#summary) <CB /> | `true`             | Add Workflow Job Summary                           |
 | [token](#token) <CB />     | `github.token`     | For use with a PAT                                 |
@@ -78,6 +79,29 @@ exclude: |
 </details>
 
 See [azat-io/actions-up#cli-excludes](https://github.com/azat-io/actions-up?tab=readme-ov-file#cli-excludes) for more details.
+
+#### files <CB />
+
+CSV or Newline List of File Names to Exclude.
+All actions in these files will be excluded.
+
+<details><summary>View CSV and Newline Examples</summary>
+
+CSV. You can use quotes on single-line inputs because YAML removes the quotes around the string.
+
+```yaml
+files: 'lint.yaml, release.yaml'
+```
+
+Multi-Line. You can NOT use quotes on multi-line inputs because YAML does NOT remove the quotes.
+
+```yaml
+files: |
+  lint.yaml
+  release.yaml
+```
+
+</details>
 
 #### fail <CB />
 

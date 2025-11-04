@@ -28,7 +28,7 @@ pageClass: examples-page
 
 ## Workflows
 
-<details><summary>Simple workflow example</summary>
+<details open><summary>Simple workflow example</summary>
 
 <<< snippets/examples/workflows/simple.yaml
 

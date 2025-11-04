@@ -7,12 +7,13 @@ title: Outputs Documentation
 
 Details about the stack are output for use in additional steps.
 
-| Input&nbsp;Name           | Output&nbsp;Description        |
-| :------------------------ | :----------------------------- |
-| [hasUpdates](#hasUpdates) | If Updates `true` else `false` |
-| [actions](#actions)       | Actions Checked                |
-| [updates](#updates)       | Available Updates              |
-| [markdown](#markdown)     | Markdown Results               |
+| Input&nbsp;Name           | Output&nbsp;Description             |
+| :------------------------ | :---------------------------------- |
+| [hasUpdates](#hasUpdates) | If Updates `true` else `false`      |
+| [actions](#actions)       | Actions Checked JSON                |
+| [updates](#updates)       | Actions Up Results JSON             |
+| [table](#table)           | Resulting Markdown Table String     |
+| [markdown](#markdown)     | Full Markdown Comment Output String |
 
 See the [Examples](examples.md) section for more options.
 
@@ -40,7 +41,7 @@ JSON Object List of Actions Scanned
 
 </details>
 
-### updates
+### updates <CB />
 
 JSON Object List of Updated Found
 
@@ -67,9 +68,21 @@ JSON Object List of Updated Found
 
 </details>
 
-### markdown
+### table <CB />
 
-Markdown Results
+Resulting Markdown Table String
+
+::: details View Example
+
+---
+
+<!--@include: include/comment.md{4,13}-->
+
+:::
+
+### markdown <CB />
+
+Full Markdown Comment Output String
 
 ::: details View Example
 
