@@ -1,2 +1,2 @@
 - name: "Actions Up"
-  uses: cssnr/actions-up-action@master
+  uses: cssnr/actions-up-action@v1

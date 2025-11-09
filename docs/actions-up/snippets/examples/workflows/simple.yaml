@@ -24,4 +24,4 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
 
       - name: "Actions Up"
-        uses: cssnr/actions-up-action@master
+        uses: cssnr/actions-up-action@v1

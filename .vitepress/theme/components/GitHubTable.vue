@@ -1,5 +1,5 @@
 <script setup>
-import { Star, Tag } from 'lucide-vue-next'
+import { CirclePlay, Star, Tag } from 'lucide-vue-next'
 // import { webExtensions } from '../../scripts/apps.js'
 
 const props = defineProps({
@@ -8,17 +8,28 @@ const props = defineProps({
   full: { type: Boolean, default: false },
   style: { type: String, default: 'flat' },
   size: { type: Number, default: 20 },
+  runs: { type: Boolean, default: false },
 })
 
 // console.log('props.repos:', props.repos)
 
+function actionYaml(repo) {
+  const yamls = ['cloudflare-purge-cache-action', 'stack-deploy-action']
+  const name = repo.split('/')[1]
+  return yamls.includes(name) ? 'action.yaml' : 'action.yml'
+}
+
 function getLink(type, repo) {
+  const owner = repo.split('/')[0]
+  const name = repo.split('/')[1]
+  const file = actionYaml(repo)
   return {
     stars: `https://img.shields.io/github/stars/${repo}?style=${props.style}&label=%20&color=forestgreen`,
     forks: `https://img.shields.io/github/forks/${repo}?style=${props.style}&label=%20&color=blue`,
     last: `https://img.shields.io/github/last-commit/${repo}?style=${props.style}&label=%20&display_timestamp=committer`,
     language: `https://img.shields.io/github/languages/top/${repo}?style=${props.style}`,
     version: `https://img.shields.io/github/v/release/${repo}?style=${props.style}&label=%20`,
+    node: `https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2F${owner}%2F${name}%2Frefs%2Fheads%2Fmaster%2F${file}&query=%24.runs.using&label=`,
   }[type]
 }
 
@@ -42,6 +53,7 @@ function shortName(repo) {
         <th class="center">Updated</th>
         <th class="center">Language</th>
         <th class="center"><Tag :size="props.size" /></th>
+        <th v-if="runs" class="center"><CirclePlay :size="props.size" /></th>
       </tr>
     </thead>
     <tbody>
@@ -72,6 +84,15 @@ function shortName(repo) {
         <td>
           <a :href="`https://github.com/${repo}/tags`" target="_blank" rel="noopener">
             <img alt="Language" :src="getLink('version', repo)" />
+          </a>
+        </td>
+        <td v-if="runs" class="center">
+          <a
+            :href="`https://github.com/${repo}/blob/master/${actionYaml(repo)}`"
+            target="_blank"
+            rel="noopener"
+          >
+            <img alt="Language" :src="getLink('node', repo)" />
           </a>
         </td>
       </tr>

@@ -26,7 +26,12 @@ See the [Examples](#examples) section for more options.
 
 #### prefix <CB />
 
+The `prefix` is applied to the generated version tags. If you release `1.0.0` or `v1.0.0`,
+the parsed major/minor is `1` and `1.0` and then with the prefix added becomes `v1` and `v1.0`.
+
 To disable the prefix, set it to an empty string `prefix: ''`
+
+The `prefix` is not applied to the specified input [tags](#tags).
 
 Default: `v`
 
@@ -46,17 +51,52 @@ Default: `false`
 
 #### tags <CB />
 
-The `prefix` is not applied to specified tags. These can be a string list `"v1,v1.0"` or newline
-delimited `|`.
+These are extra tags to set. For example, you could maintain a `latest` tag that always points to the latest release.
 
-To only update the specified `tags` set both `major` and `minor` to `false`. <Badge type="warning" text="Important" />
+These can be a string list `"v1,v1.0"` or newline delimited.
+
+<details><summary>👀 View Example tags</summary>
+
+Extra Tag.
+
+```yaml
+with:
+  tags: latest
+```
+
+CSV with [major/minor](#major-minor) disabled.
+
+```yaml
+with:
+  tags: v1,v1.0,latest
+  major: false
+  minor: false
+```
+
+Newline with [major/minor](#major-minor) disabled.
+
+```yaml
+with:
+  tags: |
+    v1
+    v1.0
+    latest
+  major: false
+  minor: false
+```
+
+---
+
+</details>
 
 #### tag <CB />
 
 This is the target tag to parse the `sha` from. Defaults to the `sha` that triggered the workflow.
 To override this behavior you can specify a target tag here from which the target `sha` will be parsed.
-This is the `sha` that all parsed or provided `tags` are updated too. Rolling back requires a PAT.
-See [Rolling Back](index.md#rolling-back) for more details and a manual workflow example.
+This is the `sha` that all parsed or provided [tags](#tags) are updated too.
+To create this tag at the current `sha` set [create](#create) to `true`.
+
+Rolling back requires a PAT. See [Rolling Back](#rolling-back) for more details and a manual workflow example.
 
 <span v-pre>
 
@@ -138,7 +178,7 @@ Manually set tags.
 
 ```yaml
 - name: 'Update Tags'
-  uses: cssnr/update-version-tags-action@v1
+  uses: cssnr/update-version-tags-action@v2
   with:
     major: false
     minor: false
@@ -151,7 +191,7 @@ Specify the target tag.
 
 ```yaml
 - name: 'Update Tags'
-  uses: cssnr/update-version-tags-action@v1
+  uses: cssnr/update-version-tags-action@v2
   with:
     tag: v1.0.1
 ```
