@@ -8,7 +8,7 @@ const props = defineProps({
   full: { type: Boolean, default: false },
   style: { type: String, default: 'flat' },
   size: { type: Number, default: 20 },
-  runs: { type: Boolean, default: false },
+  runs: { type: Boolean, default: true },
 })
 
 // console.log('props.repos:', props.repos)
@@ -29,7 +29,8 @@ function getLink(type, repo) {
     last: `https://img.shields.io/github/last-commit/${repo}?style=${props.style}&label=%20&display_timestamp=committer`,
     language: `https://img.shields.io/github/languages/top/${repo}?style=${props.style}`,
     version: `https://img.shields.io/github/v/release/${repo}?style=${props.style}&label=%20`,
-    node: `https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2F${owner}%2F${name}%2Frefs%2Fheads%2Fmaster%2F${file}&query=%24.runs.using&label=`,
+    // runs: `https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2F${owner}%2F${name}%2Frefs%2Fheads%2Fmaster%2F${file}&query=%24.runs.using&label=`,
+    runs: `https://badges.cssnr.com/yaml/https%3A%2F%2Fraw.githubusercontent.com%2F${owner}%2F${name}%2Frefs%2Fheads%2Fmaster%2F${file}/%24.runs.using?label&icon&color=blue`,
   }[type]
 }
 
@@ -92,7 +93,7 @@ function shortName(repo) {
             target="_blank"
             rel="noopener"
           >
-            <img alt="Language" :src="getLink('node', repo)" />
+            <img alt="Language" :src="getLink('runs', repo)" />
           </a>
         </td>
       </tr>
