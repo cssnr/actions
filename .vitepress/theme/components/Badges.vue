@@ -4,6 +4,7 @@ const props = defineProps({
   owner: { type: String, required: true },
   repo: { type: String, required: true },
   name: { type: String, default: null },
+  action: { type: String, default: 'action.yml' },
   image: { type: String, default: null },
 })
 
@@ -21,6 +22,10 @@ let badges = [
   {
     src: `https://img.shields.io/github/v/release/${repo}?logo=git&logoColor=white&labelColor=585858&label=%20`,
     href: `https://github.com/${repo}/releases/latest`,
+  },
+  {
+    src: `https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2F${props.owner}%2F${props.repo}%2Frefs%2Fheads%2Fmaster%2F${props.action}&query=%24.runs.using&logo=githubactions&logoColor=white&label=runs`,
+    href: `https://github.com/${repo}/blob/master/${props.action}`,
   },
   {
     src: `https://badges.cssnr.com/ghcr/size/${props.owner}/${props.image}`,
