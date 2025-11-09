@@ -114,4 +114,146 @@ const props = defineProps({
       >
     </li>
   </ul>
+
+  <h3 id="updating-actions" tabindex="-1">
+    Updating Actions
+    <a class="header-anchor" href="#updating-actions" aria-label='Updating Actions"'>​</a>
+  </h3>
+
+  <p>
+    If you prefer to manually update actions, then
+    <a href="https://github.com/azat-io/actions-up" target="_blank" rel="noreferrer">azat-io/actions-up</a>
+    was created to allow you to easily and securely do this using an interactive CLI with optional excludes.
+  </p>
+  <p>
+    I also created
+    <a href="https://github.com/cssnr/actions-up-action" target="_blank" rel="noreferrer"
+      >cssnr/actions-up-action</a
+    >
+    that will run this for you automatically and generate a markdown table for pull requests.
+  </p>
+
+  <details>
+    <summary>View Example Markdown Table</summary>
+    Scanned 8 workflows, checked 12 actions and found 6 updates.
+
+    <details open>
+      <summary>Results</summary>
+
+      <table tabindex="0">
+        <thead>
+          <tr>
+            <th style="text-align: left">Name</th>
+            <th style="text-align: left">File</th>
+            <th style="text-align: center">Breaking</th>
+            <th style="text-align: center">Latest</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align: left">
+              <a href="https://github.com/cssnr/check-build-action" target="_blank" rel="noreferrer"
+                >cssnr/check-build-action</a
+              >
+            </td>
+            <td style="text-align: left">
+              <a
+                href="https://github.com/cssnr/actions-up-action/blob/master/.github/workflows/check-build.yaml#L48"
+                target="_blank"
+                rel="noreferrer"
+                >check-build.yaml</a
+              >
+            </td>
+            <td style="text-align: center">-</td>
+            <td style="text-align: center">v1.1.0</td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <a href="https://github.com/cssnr/label-creator-action" target="_blank" rel="noreferrer"
+                >cssnr/label-creator-action</a
+              >
+            </td>
+            <td style="text-align: left">
+              <a
+                href="https://github.com/cssnr/actions-up-action/blob/master/.github/workflows/labeler.yaml#L44"
+                target="_blank"
+                rel="noreferrer"
+                >labeler.yaml</a
+              >
+            </td>
+            <td style="text-align: center">-</td>
+            <td style="text-align: center">v1.0.2</td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <a href="https://github.com/cssnr/mirror-repository-action" target="_blank" rel="noreferrer"
+                >cssnr/mirror-repository-action</a
+              >
+            </td>
+            <td style="text-align: left">
+              <a
+                href="https://github.com/cssnr/actions-up-action/blob/master/.github/workflows/mirror.yaml#L26"
+                target="_blank"
+                rel="noreferrer"
+                >mirror.yaml</a
+              >
+            </td>
+            <td style="text-align: center">-</td>
+            <td style="text-align: center">v1.2.0</td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <a href="https://github.com/cssnr/update-version-tags-action" target="_blank" rel="noreferrer"
+                >cssnr/update-version-tags-action</a
+              >
+            </td>
+            <td style="text-align: left">
+              <a
+                href="https://github.com/cssnr/actions-up-action/blob/master/.github/workflows/release.yaml#L19"
+                target="_blank"
+                rel="noreferrer"
+                >release.yaml</a
+              >
+            </td>
+            <td style="text-align: center">-</td>
+            <td style="text-align: center">v1.3.1</td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <a href="https://github.com/cssnr/package-changelog-action" target="_blank" rel="noreferrer"
+                >cssnr/package-changelog-action</a
+              >
+            </td>
+            <td style="text-align: left">
+              <a
+                href="https://github.com/cssnr/actions-up-action/blob/master/.github/workflows/release.yaml#L36"
+                target="_blank"
+                rel="noreferrer"
+                >release.yaml</a
+              >
+            </td>
+            <td style="text-align: center">⚠️</td>
+            <td style="text-align: center">v2.0.0</td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <a href="https://github.com/cssnr/update-version-tags-action" target="_blank" rel="noreferrer"
+                >cssnr/update-version-tags-action</a
+              >
+            </td>
+            <td style="text-align: left">
+              <a
+                href="https://github.com/cssnr/actions-up-action/blob/master/.github/workflows/tags.yaml#L21"
+                target="_blank"
+                rel="noreferrer"
+                >tags.yaml</a
+              >
+            </td>
+            <td style="text-align: center">-</td>
+            <td style="text-align: center">v1.3.1</td>
+          </tr>
+        </tbody>
+      </table>
+    </details>
+  </details>
 </template>
