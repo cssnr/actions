@@ -24,7 +24,8 @@ let badges = [
     href: `https://github.com/${repo}/releases/latest`,
   },
   {
-    src: `https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2F${props.owner}%2F${props.repo}%2Frefs%2Fheads%2Fmaster%2F${props.action}&query=%24.runs.using&logo=githubactions&logoColor=white&label=runs`,
+    // src: `https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2F${props.owner}%2F${props.repo}%2Frefs%2Fheads%2Fmaster%2F${props.action}&query=%24.runs.using&logo=githubactions&logoColor=white&label=runs`,
+    src: `https://badges.cssnr.com/yaml/https%3A%2F%2Fraw.githubusercontent.com%2F${props.owner}%2F${props.repo}%2Frefs%2Fheads%2Fmaster%2F${props.action}/%24.runs.using?label=runs&lucide=circle-play&color=blue`,
     href: `https://github.com/${repo}/blob/master/${props.action}`,
   },
   {
