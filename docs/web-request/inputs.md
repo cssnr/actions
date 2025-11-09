@@ -75,7 +75,7 @@ For more information on inputs, see: https://axios-http.com/docs/req_config
 
 ```yaml
 - name: 'Web Request'
-  uses: cssnr/web-request-action@v1
+  uses: cssnr/web-request-action@v2
   with:
     url: https://httpbin.org/post
 ```
@@ -88,7 +88,7 @@ For more information on inputs, see: https://axios-http.com/docs/req_config
 
 ```yaml
 - name: 'Algolia Start Crawl'
-  uses: cssnr/web-request-action@v1
+  uses: cssnr/web-request-action@v2
   with:
     url: https://crawler.algolia.com/api/1/crawlers/${{ secrets.CRAWLER_ID }}/reindex
     username: ${{ secrets.CRAWLER_USER_ID }}
@@ -100,7 +100,7 @@ For more information on inputs, see: https://axios-http.com/docs/req_config
 
 ```yaml
 - name: 'Render Deploy'
-  uses: cssnr/web-request-action@v1
+  uses: cssnr/web-request-action@v2
   with:
     url: ${{ secrets.RENDER_HOOK }}
     params: |
@@ -112,7 +112,7 @@ For more information on inputs, see: https://axios-http.com/docs/req_config
 
 ```yaml
 - name: 'Web Request'
-  uses: cssnr/web-request-action@v1
+  uses: cssnr/web-request-action@v2
   with:
     url: https://httpbin.org/get
     method: 'GET'
@@ -123,7 +123,7 @@ For more information on inputs, see: https://axios-http.com/docs/req_config
 
 ```yaml
 - name: 'Web Request'
-  uses: cssnr/web-request-action@v1
+  uses: cssnr/web-request-action@v2
   with:
     url: https://httpbin.org/post
     data: '{"key": "value"}'
@@ -134,7 +134,7 @@ For more information on inputs, see: https://axios-http.com/docs/req_config
 
 ```yaml
 - name: 'Web Request'
-  uses: cssnr/web-request-action@v1
+  uses: cssnr/web-request-action@v2
   with:
     url: https://httpbin.org/post
     file: path/to/file.txt
@@ -146,7 +146,7 @@ For more information on inputs, see: https://axios-http.com/docs/req_config
 
 ```yaml
 - name: 'Web Request'
-  uses: cssnr/web-request-action@v1
+  uses: cssnr/web-request-action@v2
   with:
     url: https://httpbin.org/post
     method: 'POST'

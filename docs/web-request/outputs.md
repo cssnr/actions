@@ -34,7 +34,7 @@ Using the outputs in a workflow.
 ```yaml
 - name: 'Web Request'
   id: test
-  uses: cssnr/web-request-action@v1
+  uses: cssnr/web-request-action@v2
   with:
     url: https://httpbin.org/post
 

@@ -7,7 +7,7 @@ prev:
 
 # Cloudflare Purge Cache Action
 
-<Badges owner="cssnr" repo="cloudflare-purge-cache-action" name="cloudflare-purge-zone-cache" image="cloudflare-purge-cache-action" />
+<Badges owner="cssnr" repo="cloudflare-purge-cache-action" name="cloudflare-purge-zone-cache" image="cloudflare-purge-cache-action" action="action.yaml" />
 
 Purge Cloudflare cache for a zone or list of zones with optional filters including files, prefixes, tags, and hosts.
 

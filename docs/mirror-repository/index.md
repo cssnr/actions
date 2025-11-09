@@ -47,10 +47,6 @@ See the [Inputs Documentation](inputs.md) for additional options and **default v
 
 Don't see your feature here? Please help by submitting a [Feature Request](https://github.com/cssnr/mirror-repository-action/discussions/categories/feature-requests).
 
-## Rolling Tags
-
-<RollingTags repo="cssnr/mirror-repository-action" />
-
 ## Setup Instructions
 
 1. Create a Token for Mirror to use as a Password for Pushing Commits, or Creating Repositories.
@@ -72,6 +68,10 @@ Don't see your feature here? Please help by submitting a [Feature Request](https
 See the [Inputs Documentation](inputs.md) for additional options and **default values**.
 
 </div>
+
+## Rolling Tags
+
+<RollingTags repo="cssnr/mirror-repository-action" />
 
 &nbsp;
 
