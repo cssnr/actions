@@ -14,6 +14,9 @@ hero:
     - text: Actions
       link: /actions
       theme: brand
+    - text: Tools
+      link: /actions-tools
+      theme: brand
     - text: Support
       link: /support
       theme: alt

@@ -1,0 +1,13 @@
+- name: "Package Changelog Action"
+  id: changelog
+  uses: cssnr/package-changelog-action@v2
+  with:
+    update: false
+
+- name: "Echo Output"
+  env:
+    JSON: ${{ steps.changelog.outputs.json }}
+    MARKDOWN: ${{ steps.changelog.outputs.markdown }}
+  run: |
+    echo "json: '${{ env.JSON }}'"
+    echo "markdown: '${{ env.MARKDOWN }}'"

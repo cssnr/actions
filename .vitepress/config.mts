@@ -119,6 +119,7 @@ export default defineConfig({
           items: [
             { text: 'Actions', link: '/actions' },
             { text: 'Development', link: '/development' },
+            { text: 'Actions Tools', link: '/actions-tools' },
           ],
         },
         // {
