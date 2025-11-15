@@ -6,9 +6,9 @@ pageClass: features-page
 
 - Automatically parse differences between package-lock.json changes between releases.
 - Sorts into sections: Added, Upgraded, Downgraded, Removed, Unknown, Unchanged.
-- Option to customize sections visibility and sections order.
-- Option to customize columns visibility and columns order.
-- Option to display results expanded or collapsed.
+- Option to [customize](#table-options) sections visibility and sections order.
+- Option to [customize](#table-options) columns visibility and columns order.
+- Option to [display results](#table-example) expanded or collapsed.
 - Outputs changes in JSON and markdown.
 
 ## Planned
@@ -20,9 +20,19 @@ pageClass: features-page
 - Custom Section Icons
 - Custom Section Text
 
-## Retarded Design
+## Table Options
+
+These are the available table Sections and Columns.
 
 <!--@include: include/table-options.md-->
+
+## Table Example
+
+This is an example table.
+
+---
+
+<!--@include: include/table.md-->
 
 ## Rolling Tags
 

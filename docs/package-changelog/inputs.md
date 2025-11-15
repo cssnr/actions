@@ -5,7 +5,7 @@ title: Inputs Documentation
 
 # Inputs
 
-💡 Click on the **Input Name** for more [Details](#details).
+💡 Click on the **Input Name** for more Details.
 
 | Input                        | Req. | Default&nbsp;Value           | Input&nbsp;Description                              |
 | :--------------------------- | :--: | :--------------------------- | :-------------------------------------------------- |
@@ -25,36 +25,48 @@ title: Inputs Documentation
 
 See the [Examples](examples.md) section for more options.
 
-#### path
+#### path <CB />
 
 The `path` to the package lock file to proces.
 
-#### update
+Default: `package-lock.json`
+
+#### update <CB />
 
 Set this to `false` if you only want to use the [Outputs](#Outputs).
 
-#### heading
+Default: `package-lock.json`
+
+#### heading <CB />
 
 You can customize the `heading` or set to an empty string to remove it.
 
-#### toggle
+Default: `### Package Changes`
+
+#### toggle <CB />
 
 The `toggle` must be set to a non-empty string if changing this input.
 
-#### open
+Default: `Click Here to View Changes`
+
+#### open <CB />
 
 Set summary to be open by default (note the first example below is open).
 
-#### empty
+Default: `false`
+
+#### empty <CB />
 
 Set this to `true` to update release notes when no changes are detected.
 
-#### columns
+Default: `false`
+
+#### columns <CB />
 
 Customize column visibility and order.
 This must be a perfectly formatted CSV with any combination of these keys:
 
-Default value: `n,i,t,b,a`
+Default: `n,i,t,b,a`
 
 | Key | Column       | Column&nbsp;Description |
 | :-: | :----------- | :---------------------- |
@@ -64,12 +76,12 @@ Default value: `n,i,t,b,a`
 | `b` | Before       | Version before change   |
 | `a` | After        | Version after change    |
 
-#### sections
+#### sections <CB />
 
 Customize section visibility and order.
 This must be a perfectly formatted CSV with any combination of these keys:
 
-Default value: `a,u,d,r,k`
+Default: `a,u,d,r,k`
 
 | Key | Section    | Section&nbsp;Description    |
 | :-: | :--------- | :-------------------------- |
@@ -105,6 +117,24 @@ const maps = {
 ```
 
 </details>
+
+#### max <CB />
+
+Maximum number of releases to process when finding the latest.
+
+Default: `30`
+
+#### summary <CB />
+
+This will add a Job Summary to the workflow run. Set to `false` to disable.
+
+Default: `true`
+
+#### token <CB />
+
+To use a different token, such as a PAT.
+
+Default: `github.token`
 
 ### Changelog Examples
 
