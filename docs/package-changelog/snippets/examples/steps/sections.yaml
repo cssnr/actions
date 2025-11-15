@@ -1,0 +1,4 @@
+- name: "Package Changelog Action"
+  uses: cssnr/package-changelog-action@v2
+  with:
+    sections: "u,a,d,r,k"

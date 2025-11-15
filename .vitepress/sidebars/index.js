@@ -3,6 +3,7 @@ import { directory, items } from './default.js'
 import dockerContext from './actions/dockerContext.js'
 import mirrorRepository from './actions/mirrorRepository'
 import updateVersionTags from './actions/updateVersionTags'
+import packageChangelog from './actions/packageChangelog'
 import cloudflarePurgeCache from './actions/cloudflarePurgeCache'
 import webRequest from './actions/webRequest'
 import actionsUp from './actions/actionsUp'
@@ -16,6 +17,7 @@ export default {
     '/docker-context/': dockerContext,
     '/mirror-repository/': mirrorRepository,
     '/update-version-tags/': updateVersionTags,
+    '/package-changelog/': packageChangelog,
     '/cloudflare-purge-cache/': cloudflarePurgeCache,
     '/web-request/': webRequest,
     '/actions-up/': actionsUp,
