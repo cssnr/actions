@@ -9,11 +9,12 @@ title: Actions Tools
 
 # Actions Tools
 
-[[toc]]
+[![PyPI Version](https://img.shields.io/pypi/v/actions-tools?logo=pypi&logoColor=white&label=pypi&color=3e7bac)](https://pypi.org/project/actions-tools/)
+[![PyPI Downloads](https://img.shields.io/pypi/dm/actions-tools?logo=pypi&logoColor=white)](https://pepy.tech/projects/actions-tools)
+[![Codecov](https://img.shields.io/codecov/c/github/cssnr/actions-tools?token=A8NDHZ393X&logo=codecov&logoColor=white)](https://codecov.io/gh/cssnr/actions-tools)
+[![GitHub Last Commit](https://img.shields.io/github/last-commit/cssnr/actions-tools?logo=github&logoColor=white&label=updated)](https://github.com/cssnr/actions-tools/?tab=readme-ov-file#readme)
 
-## Python
-
-I created a Python Actions Toolkit to provide similar functionality to [actions/toolkit](https://github.com/actions/toolkit).
+If you are writing Actions in Python I created a Python Actions Toolkit to provide similar functionality to [actions/toolkit](https://github.com/actions/toolkit).
 
 - https://actions-tools.cssnr.com/
 
@@ -47,6 +48,8 @@ actions-tools[github]
 
 ### Usage
 
+This is just a simple example, make sure to view the [Usage Guide](https://actions-tools.cssnr.com/usage/).
+
 ```python
 from actions import core, context
 
@@ -61,9 +64,3 @@ core.info(f"repo.name: {repo.name}")
 View the complete [Usage Guide](https://actions-tools.cssnr.com/usage/).
 
 :::
-
-## JavaScript
-
-If you are creating a JavaScript Action you should use the official toolkit:
-
-- [https://github.com/actions/toolkit](https://github.com/actions/toolkit?tab=readme-ov-file#packages)
