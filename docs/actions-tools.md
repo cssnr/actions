@@ -2,6 +2,11 @@
 title: Actions Tools
 ---
 
+<a href="https://actions-tools.cssnr.com/" target="_blank">
+<img src="https://raw.githubusercontent.com/smashedr/repo-images/refs/heads/master/actions-tools/logo256.png"
+    alt="Actions Tools" width="128" height="128" style="float: right;">
+</a>
+
 # Actions Tools
 
 [[toc]]
@@ -10,7 +15,7 @@ title: Actions Tools
 
 I created a Python Actions Toolkit to provide similar functionality to [actions/toolkit](https://github.com/actions/toolkit).
 
-https://actions-tools.cssnr.com/
+- https://actions-tools.cssnr.com/
 
 ### Install
 
