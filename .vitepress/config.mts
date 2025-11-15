@@ -118,6 +118,7 @@ export default defineConfig({
           text: 'Home',
           items: [
             { text: 'Actions', link: '/actions' },
+            { text: 'Actions Tools', link: '/actions-tools' },
             { text: 'Development', link: '/development' },
           ],
         },

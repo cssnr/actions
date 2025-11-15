@@ -83,7 +83,7 @@ function shortName(repo) {
           </a>
         </td>
         <td>
-          <a :href="`https://github.com/${repo}/tags`" target="_blank" rel="noopener">
+          <a :href="`https://github.com/${repo}/graphs/traffic`" target="_blank" rel="noopener">
             <img alt="Language" :src="getLink('version', repo)" />
           </a>
         </td>
