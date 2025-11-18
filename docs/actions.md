@@ -18,9 +18,9 @@ These actions are currently documented off-site.
 
 &nbsp;
 
-::: warning Work in Progress
-This site is a Work in Progress and will eventually host the documentation for all actions.
-:::
+Don't see what you need? Request a [new GitHub Action](https://github.com/cssnr/actions/discussions/categories/github-actions).
+
+[![Request Action](https://img.shields.io/badge/request_a_github_action-blue?style=for-the-badge&logo=github-actions&logoColor=white)](https://github.com/cssnr/actions/discussions/categories/github-actions)
 
 ## Published Actions
 
@@ -80,3 +80,9 @@ These are the same actions from the [Published Actions](#published-actions) list
 - [Get Commit Action](https://github.com/cssnr/get-commit-action?tab=readme-ov-file#readme)
 - [NPM Outdated Check Action](https://github.com/cssnr/npm-outdated-action?tab=readme-ov-file#readme)
 - [Check Build Action](https://github.com/cssnr/check-build-action?tab=readme-ov-file#readme)
+
+&nbsp;
+
+::: warning Work in Progress
+This site is a Work in Progress and will eventually host the documentation for all actions.
+:::

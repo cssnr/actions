@@ -12,6 +12,18 @@ Likewise, you can get support for anything on [Discord](#discord-chat) or send u
 
 Feel free to contact me about anything or check out the additional [Links](#links).
 
+### Request an Action
+
+If you need a specific action, feel free to request a [new GitHub Action](https://github.com/cssnr/actions/discussions/categories/github-actions).
+
+[![Request Action](https://img.shields.io/badge/request_a_github_action-blue?style=for-the-badge&logo=github-actions&logoColor=white)](https://github.com/cssnr/actions/discussions/categories/github-actions)
+
+### Start a Discussion
+
+Feel free to start a GitHub Discussion about anything...
+
+[![Start A Discussion](https://img.shields.io/badge/Start_A_Discussion-blue?style=for-the-badge&logo=github)](https://github.com/cssnr/actions/discussions)
+
 ### Discord Chat
 
 You can chat with us about anything [on discord](https://discord.gg/wXy6m2X8wY).

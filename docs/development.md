@@ -4,17 +4,21 @@ If you are interested in Action Development, these resources may help.
 
 [[toc]]
 
+&nbsp;
+
+[![Request Action](https://img.shields.io/badge/request_a_github_action-blue?style=for-the-badge&logo=github-actions&logoColor=white)](https://github.com/cssnr/actions/discussions/categories/github-actions)
+
 ## Unpublished Actions
 
 These are actions I have not published. Some of which I use internally.
 
-<GitHubTable title="Published" :repos="actions.unpublished" />
+<GitHubTable title="Unpublished" :repos="actions.unpublished" />
 
 ## Template Actions
 
 These are actions I use as starting points for creating new actions.
 
-<GitHubTable title="Published" :repos="actions.template" />
+<GitHubTable title="Template" :repos="actions.template" />
 
 ## Get Started
 

@@ -93,3 +93,9 @@ These are actions are using [actions-tools](https://github.com/cssnr/actions-too
 - Create Files Action: [cssnr/create-files-action](https://github.com/cssnr/create-files-action)
 - Python Action Template: [smashedr/test-action-py](https://github.com/smashedr/test-action-py)
 - Python UV Action Template: [smashedr/test-action-uv](https://github.com/smashedr/test-action-uv)
+
+&nbsp;
+
+Don't see what you need? Request a [new GitHub Action](https://github.com/cssnr/actions/discussions/categories/github-actions).
+
+[![Request Action](https://img.shields.io/badge/request_a_github_action-blue?style=for-the-badge&logo=github-actions&logoColor=white)](https://github.com/cssnr/actions/discussions/categories/github-actions)
