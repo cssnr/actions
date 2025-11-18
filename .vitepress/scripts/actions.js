@@ -21,12 +21,14 @@ export default {
     'cssnr/upload-release-action',
     'cssnr/virustotal-action',
     'cssnr/web-request-action',
+    'cssnr/zensical-action',
   ],
   unpublished: [
     'cssnr/create-files-action',
     'cssnr/draft-release-action',
     'cssnr/env-json-action',
     'cssnr/push-artifacts-action',
+    // 'cssnr/validate-outputs-action',
     'smashedr/update-release-notes-action',
     'smashedr/combine-release-notes-action',
   ],
@@ -35,5 +37,7 @@ export default {
     'smashedr/py-test-action',
     'smashedr/ts-test-action',
     'smashedr/docker-test-action',
+    // 'smashedr/test-action-uv',
+    // 'smashedr/test-action-py',
   ],
 }
