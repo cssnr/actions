@@ -16,6 +16,7 @@ export default {
     'cssnr/parse-issue-form-action',
     'cssnr/portainer-stack-deploy-action',
     'cssnr/stack-deploy-action',
+    'cssnr/toml-action',
     'cssnr/update-json-value-action',
     'cssnr/update-version-tags-action',
     'cssnr/upload-release-action',

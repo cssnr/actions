@@ -21,6 +21,7 @@ export default [
     collapsed: true,
     items: [
       { text: 'Actions', link: '/actions' },
+      { text: 'Actions Tools', link: '/actions-tools' },
       { text: 'Development', link: '/development' },
       { text: 'Support', link: '/support' },
     ],
