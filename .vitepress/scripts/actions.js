@@ -29,7 +29,7 @@ export default {
     'cssnr/draft-release-action',
     'cssnr/env-json-action',
     'cssnr/push-artifacts-action',
-    // 'cssnr/validate-outputs-action',
+    'cssnr/validate-outputs-action',
     'smashedr/update-release-notes-action',
     'smashedr/combine-release-notes-action',
   ],
