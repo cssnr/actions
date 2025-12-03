@@ -25,6 +25,7 @@ export default {
     'cssnr/zensical-action',
   ],
   unpublished: [
+    'cssnr/actionlint-action',
     'cssnr/create-files-action',
     'cssnr/draft-release-action',
     'cssnr/env-json-action',
@@ -38,7 +39,7 @@ export default {
     'smashedr/py-test-action',
     'smashedr/ts-test-action',
     'smashedr/docker-test-action',
-    // 'smashedr/test-action-uv',
-    // 'smashedr/test-action-py',
+    'smashedr/test-action-uv',
+    'smashedr/test-action-py',
   ],
 }
