@@ -1,5 +1,6 @@
 export default {
   published: [
+    'cssnr/actionlint-action',
     'cssnr/actions-up-action',
     'cssnr/algolia-crawler-action',
     'cssnr/check-build-action',
@@ -25,7 +26,6 @@ export default {
     'cssnr/zensical-action',
   ],
   unpublished: [
-    'cssnr/actionlint-action',
     'cssnr/create-files-action',
     'cssnr/draft-release-action',
     'cssnr/env-json-action',
