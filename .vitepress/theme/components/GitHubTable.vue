@@ -60,9 +60,7 @@ function shortName(repo) {
     <tbody>
       <tr v-for="repo in props.repos" :key="repo">
         <td class="repository">
-          <a :href="`https://github.com/${repo}`" :title="repo" target="_blank" rel="noopener">{{
-            shortName(repo)
-          }}</a>
+          <a :href="`https://github.com/${repo}`" :title="repo" target="_blank" rel="noopener">{{ shortName(repo) }}</a>
         </td>
         <td class="center">
           <a :href="`https://github.com/${repo}/stargazers`" target="_blank" rel="noopener">
@@ -88,11 +86,7 @@ function shortName(repo) {
           </a>
         </td>
         <td v-if="runs" class="center">
-          <a
-            :href="`https://github.com/${repo}/blob/master/${actionYaml(repo)}`"
-            target="_blank"
-            rel="noopener"
-          >
+          <a :href="`https://github.com/${repo}/blob/master/${actionYaml(repo)}`" target="_blank" rel="noopener">
             <img alt="Language" :src="getLink('runs', repo)" />
           </a>
         </td>

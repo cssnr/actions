@@ -1,5 +1,4 @@
 {
-  "name": "github-actions",
   "private": true,
   "scripts": {
     "docs": "npm run docs:dev",
@@ -11,12 +10,12 @@
     "prettier:write": "npx prettier --write ."
   },
   "dependencies": {
-    "@cssnr/vitepress-plugin-copybutton": "^0.0.2",
-    "lucide-vue-next": "^0.562.0",
+    "@cssnr/vitepress-plugin-copybutton": "^0.0.3",
+    "lucide-vue-next": "^1.0.0",
     "vitepress": "^1.6.4",
-    "vitepress-plugin-group-icons": "^1.6.5"
+    "vitepress-plugin-group-icons": "^1.7.5"
   },
   "devDependencies": {
-    "prettier": "^3.7.4"
+    "prettier": "^3.8.3"
   }
 }

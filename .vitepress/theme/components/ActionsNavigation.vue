@@ -17,11 +17,7 @@ const currentAction = computed(() => {
 </script>
 
 <template>
-  <VPNavBarMenuGroup
-    v-if="!screenMenu"
-    :item="{ text: currentAction, items: actions }"
-    class="actions-navigation"
-  />
+  <VPNavBarMenuGroup v-if="!screenMenu" :item="{ text: currentAction, items: actions }" class="actions-navigation" />
   <VPNavScreenMenuGroup v-else :text="currentAction" :items="actions" class="actions-navigation" />
 </template>
 

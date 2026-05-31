@@ -43,7 +43,7 @@ async function generateHash(event) {
 /**
  * Fetch Data
  * @param {String} url
- * @return {Promise<Object>}
+ * @return {Promise<object>}
  */
 async function fetchData(url) {
   const options = { headers: { 'X-GitHub-Api-Version': '2022-11-28' } }

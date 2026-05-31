@@ -25,6 +25,7 @@ export default {
     'cssnr/upload-release-action',
     'cssnr/virustotal-action',
     'cssnr/web-request-action',
+    'cssnr/webstore-publish-action',
     'cssnr/zensical-action',
   ],
   unpublished: [
@@ -33,7 +34,8 @@ export default {
     'cssnr/env-json-action',
     'cssnr/push-artifacts-action',
     'cssnr/validate-outputs-action',
-    'smashedr/update-release-notes-action',
+    'smashedr/ai-issue-action',
+    'smashedr/combine-release-notes-action',
     'smashedr/combine-release-notes-action',
   ],
   template: [
