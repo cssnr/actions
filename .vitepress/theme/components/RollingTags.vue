@@ -8,8 +8,8 @@ const props = defineProps({
 <template>
   <p>
     The following rolling
-    <a :href="`https://github.com/${props.repo}/tags`" target="_blank" rel="noreferrer">tags</a> are
-    maintained to improve stability across updates.
+    <a :href="`https://github.com/${props.repo}/tags`" target="_blank" rel="noreferrer">tags</a> are maintained to
+    improve stability across updates.
   </p>
   <table>
     <thead>
@@ -79,21 +79,19 @@ const props = defineProps({
   </p>
 
   <p>
-    The <strong>Major</strong> tag is recommended. It is the most up-to-date and always backwards compatible.
-    Breaking changes would result in a <strong>Major</strong> version bump. At a minimum you should use a
+    The <strong>Major</strong> tag is recommended. It is the most up-to-date and always backwards compatible. Breaking
+    changes would result in a <strong>Major</strong> version bump. At a minimum you should use a
     <strong>Minor</strong> tag.
   </p>
 
   <h3 id="tags-security-notice" tabindex="-1">
     Tags Security Notice
-    <a class="header-anchor" href="#tags-security-notice" aria-label='Permalink to "Tags Security Notice"'
-      >​</a
-    >
+    <a class="header-anchor" href="#tags-security-notice" aria-label='Permalink to "Tags Security Notice"'>​</a>
   </h3>
 
   <p>
-    As shown above, tags are mutable; however, <strong>commit hashes are not</strong>. Therefore, if security
-    is your top priority, you should pin your actions to a specific commit hash.
+    As shown above, tags are mutable; however, <strong>commit hashes are not</strong>. Therefore, if security is your
+    top priority, you should pin your actions to a specific commit hash.
   </p>
 
   <ul>
@@ -127,9 +125,7 @@ const props = defineProps({
   </p>
   <p>
     I also created
-    <a href="https://github.com/cssnr/actions-up-action" target="_blank" rel="noreferrer"
-      >cssnr/actions-up-action</a
-    >
+    <a href="https://github.com/cssnr/actions-up-action" target="_blank" rel="noreferrer">cssnr/actions-up-action</a>
     that will run this for you automatically and generate a markdown table for pull requests.
   </p>
 

@@ -103,10 +103,7 @@ if (!props.image) badges = badges.filter((b) => !b.image)
             media="(prefers-color-scheme: dark)"
             srcset="https://img.shields.io/badge/github-0d1117?style=for-the-badge&logo=github"
           />
-          <img
-            src="https://img.shields.io/badge/github-424a53?style=for-the-badge&logo=github"
-            alt="GitHub"
-          />
+          <img src="https://img.shields.io/badge/github-424a53?style=for-the-badge&logo=github" alt="GitHub" />
         </picture>
       </a>
 
